@@ -1,12 +1,12 @@
-# Rime dictionary: wubi98_ci.extended
+# Rime dictionary: wubi98_U.extended
 # encoding: utf-8
 
 ---
-name: wubi98_ci.extended
+name: wubi98_U.extended
 version: "2.0"
 sort: by_weight
 import_tables:
-  - wubi98_ci
+  - wubi98_U
 columns:
   - text
   - weight
