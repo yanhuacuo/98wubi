@@ -4,7 +4,7 @@
 
 schema:
   schema_id: wubi98_ci
-  name: "98五笔·含词"
+  name: "98五笔"
   version: "5.0"
   author:
     - 發明人 王永民
@@ -136,6 +136,7 @@ jiayin:
     - "xform/<br>/\r/"
     - "xform/&nbsp/ /"
   tags:
+# 如需取消「汉语拼音缀饰」，只需注释掉下面这个「 - abc 」一行。  
     - abc
     - zhuyin_fix
   tips: all 
