@@ -10,7 +10,7 @@
 
 ## 功能特点
 
-- 默认缀饰带声调的汉语拼音，由「opencc」组件实现，故本当的「opencc」文件夹为不可或缺的部分。
+- 默认缀饰带声调的汉语拼音，由「opencc」组件实现，故本档中的「opencc」文件夹为不可或缺的部分。
 
 ![缀音](https://raw.githubusercontent.com/yanhuacuo/98WB/master/issues/%E9%A2%84%E8%A7%882.png)
 
