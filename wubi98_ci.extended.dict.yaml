@@ -9,7 +9,9 @@ import_tables:
   - wubi98_ci
 columns:
   - text
+  - code
   - weight
+  - stem
 encoder:
   exclude_patterns:
     - '^z.*$'
