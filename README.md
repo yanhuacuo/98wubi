@@ -23,8 +23,11 @@
 - 「 ~ 」键引导的「以形查音」模式，同样调用「opencc」组件实现，可以查询GB18030内汉字的传统带调拼音。
 
 ![查音](https://raw.githubusercontent.com/yanhuacuo/98WB/master/issues/%E9%A2%84%E8%A7%884.png)
+
 ![查音示例](https://raw.githubusercontent.com/yanhuacuo/98WB/master/issues/%E9%9F%B3.png)
+
 - 「 z 」键引导的「拼音反查」模式，临时开启拼音模式并反查五笔编码。
+
 ![反查](https://raw.githubusercontent.com/yanhuacuo/98WB/master/issues/%E5%8F%8D%E6%9F%A5.png)
 
 - 扩展词库「 wubi98_ci.extended.dict.yaml 」可以直接批量写入词条，无需写入相应编码，如有需要也可添加词频来微调「重码」的条目。
