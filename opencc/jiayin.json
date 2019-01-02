@@ -1,0 +1,16 @@
+{
+  "name": "jiayin",
+  "segmentation": {
+    "type": "mmseg",
+    "dict": {
+      "type": "text",
+      "file": "jiayin.txt"
+    }
+  },
+  "conversion_chain": [{
+    "dict": {
+      "type": "text",
+      "file": "jiayin.txt"
+    }
+  }]
+}

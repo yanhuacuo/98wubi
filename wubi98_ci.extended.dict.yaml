@@ -1,0 +1,26 @@
+# Rime dictionary: wubi98_ci.extended
+# encoding: utf-8
+
+---
+name: wubi98_ci.extended
+version: "2.0"
+sort: by_weight
+import_tables:
+  - wubi98_ci
+columns:
+  - text
+  - weight
+encoder:
+  exclude_patterns:
+    - '^z.*$'
+  rules:
+    - length_equal: 2
+      formula: "AaAbBaBb"
+    - length_equal: 3
+      formula: "AaBaCaCb"
+    - length_in_range: [4, 90]
+      formula: "AaBaCaZa"
+...
+
+故人西辞黄鹤楼，烟花三月下扬州。孤帆远影碧空尽，唯见长江天际流
+日照香炉生紫烟，遥看瀑布挂前川。飞流直下三千尺，疑是银河落九天
