@@ -8,7 +8,9 @@ patch:
   "ascii_composer/switch_key/Shift_R": commit_code
   schema_list:
     #方案列表
+    - {schema: wubi98_dz}
     - {schema: wubi98_ci}
+    - {schema: wubi98_U}
     - {schema: py}
   "key_binder/bindings":
     # ↓ 以下2條爲加減號翻頁
@@ -25,8 +27,8 @@ patch:
     - { when: composing, accept: Return, send: Escape }    
     - { when: has_menu, accept: Return, send: Escape }
     # ↓ 以下2條爲左右方向鍵選擇候選項
-    #- { when: has_menu, accept: Left, send: Up }    
-    #- { when: has_menu, accept: Right, send: Down } 
+    - { when: has_menu, accept: Left, send: Up }    
+    - { when: has_menu, accept: Right, send: Down } 
     # ↓ 快捷鍵
     - { when: always, accept: Control+Shift+4, toggle: zh_trad }
     - { when: always, accept: Control+Shift+dollar, toggle: zh_trad }
