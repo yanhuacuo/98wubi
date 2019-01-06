@@ -9,7 +9,9 @@
 config_version: "0.50"
 
 schema_list:
+  - schema: wubi98_dz
   - schema: wubi98_ci
+  - schema: wubi98_U
   - schema: py
 
 switcher:
@@ -109,12 +111,11 @@ key_binder:
     - {accept: space, send: space, when: has_menu}
     - {accept: Return, send: Escape, when: composing}
     - {accept: Return, send: Escape, when: has_menu}
-    - {accept: Left, send: Up, when: has_menu}
-    - {accept: Right, send: Down, when: has_menu}
     - {accept: "Control+Shift+4", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
-    - {accept: "Control+Shift+H", toggle: jiayin, when: always}
+    - {accept: "Control+Shift+H", toggle: 98wb_spelling, when: always}
+    - {accept: "Control+Shift+J", toggle: 98wb_spelling, when: always} 
     
 recognizer:
   patterns:
