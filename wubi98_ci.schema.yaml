@@ -5,7 +5,7 @@
 
 schema:
   schema_id: wubi98_ci
-  name: "98五笔"
+  name: "98五笔·含词"
   version: "5.0"
   author:
     - 發明人 王永民
@@ -19,18 +19,20 @@ schema:
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中, 英 ]
   - name: zh_trad
     reset: 0
-    states: [ 简, 繁 ]
+    states: [ 简,繁 ]
+  - name: 98wb_spelling
+    reset: 0
+    states: [ 隐,显 ]    
   - name: jiayin
     reset: 1
-    states: [ 字, 音 ]
     
 engine:
   filters:
     - simplifier
     - "reverse_lookup_filter@ci_reverse_lookup"
+    - "simplifier@98wb_spelling"    
     - "simplifier@jiayin"
     - uniquifier
   processors:
@@ -110,6 +112,7 @@ rvlk1:
   tag: rvlk1
   extra_tags:
     - rvlk2  
+    
 
 ci_reverse_lookup:
   dictionary: wubi98_ci.extended
@@ -121,11 +124,25 @@ zhuyin_fix:
   __include: /translator
   prefix: '~'
   tips: "〔以形查音〕"
-  tag: zhuyin_fix    
+  tag: zhuyin_fix
 
 simplifier:
   opencc_config: s2t.json
   option_name: zh_trad
+
+
+98wb_spelling:
+  opencc_config: 98wb_spelling.json
+  option_name: 98wb_spelling
+  show_in_comment: true
+  comment_format:
+    - "xform/<br>/\r/"
+    - "xform/※/ /"
+  tags:
+    - abc
+    - rvlk1
+  tips: all 
+
 
 jiayin:
   opencc_config: jiayin.json
@@ -135,7 +152,7 @@ jiayin:
     - "xform/<br>/\r/"
     - "xform/&nbsp/ /"
   tags:
-    - abc
+#   - abc
     - zhuyin_fix
   tips: all 
 
@@ -150,13 +167,8 @@ recognizer:
     uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
     zhuyin_fix: "~[a-y]*?$"
-    
-punctuator:
-  import_preset: symbols
 
-key_binder:
-  import_preset: default
-    
+   
 key_binder:
   bindings:
     - {accept: minus, send: Page_Up, when: has_menu}
@@ -167,14 +179,13 @@ key_binder:
     - {accept: space, send: space, when: has_menu}
     - {accept: Return, send: Escape, when: composing}
     - {accept: Return, send: Escape, when: has_menu}
-    - {accept: Left, send: Up, when: has_menu}
-    - {accept: Right, send: Down, when: has_menu}
+
     - {accept: "Control+Shift+4", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
-    - {accept: "Control+Shift+H", toggle: jiayin, when: always}
+    - {accept: "Control+Shift+H", toggle: 98wb_spelling, when: always}
+    - {accept: "Control+Shift+J", toggle: 98wb_spelling, when: always} 
   import_preset: default
-
 punctuator:
   full_shape:
     " ": {commit: "　"}
