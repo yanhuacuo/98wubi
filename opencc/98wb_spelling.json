@@ -3,16 +3,14 @@
   "segmentation": {
     "type": "mmseg",
     "dict": {
-      "type": "text",
-      "file": "98wb_spelling.txt"
+      "type": "ocd",
+      "file": "98wb_spelling.ocd"
     }
   },
-  "conversion_chain": [
-    {
-      "dict": {
-        "type": "text",
-        "file": "98wb_spelling.txt"
-      }
+  "conversion_chain": [{
+    "dict": {
+      "type": "ocd",
+      "file": "98wb_spelling.ocd"
     }
-  ]
+  }]
 }
