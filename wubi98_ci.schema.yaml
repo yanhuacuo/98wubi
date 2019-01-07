@@ -14,7 +14,7 @@ schema:
     碼表源自 yanhuacuo
     敲 z 鍵進入拼音反查
   dependencies:
-    - py
+#   - py
 
 switches:
   - name: ascii_mode
@@ -179,7 +179,8 @@ key_binder:
     - {accept: space, send: space, when: has_menu}
     - {accept: Return, send: Escape, when: composing}
     - {accept: Return, send: Escape, when: has_menu}
-
+    - {accept: Left, send: Up, when: has_menu}
+    - {accept: Right, send: Down, when: has_menu}
     - {accept: "Control+Shift+4", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
