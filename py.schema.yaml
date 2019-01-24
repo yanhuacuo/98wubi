@@ -10,6 +10,7 @@ schema:
   description: |
     源自 Android 拼音
   dependencies:
+    - wubi98_dz
     - wubi98_ci
 
 switches:
@@ -80,11 +81,16 @@ recognizer:
     punct: '^/([0-9]0?|[A-Za-z]+)$'
     reverse_lookup: "^z[a-z]*'?$"
 
-
-ci_reverse_lookup:
-  dictionary: wubi98_ci.extended
+    
+dz_reverse_lookup:
+  dictionary: wubi98_dz.extended
   overwrite_comment: true
   enable_completion: true
-  tips: 〔五笔〕  
+  tips: 〔五笔1〕
+  
+ci_reverse_lookup:
+  dictionary: wubi98_ci.extended
+  enable_completion: true
+  tips: 〔五笔2〕  
 
   

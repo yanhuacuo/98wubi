@@ -1,0 +1,10 @@
+patch:  
+  "style/candidate_text_size": 22 #候選字號
+  "style/candidate_view_height": 24 #候選區高度
+  "style/window/@0/move": ' '  #注释掉㞢符
+  "style/comment_text_size": 16 #編碼提示字號
+  "style/key_text_size": 16 #鍵字號
+  "style/comment_height": 18 #編碼提示區高度
+  "style/candidate_font": 98WB-1.otf #候選字型
+  "style/hanb_font": 98WB-1.otf #擴充字型
+  "style/symbol_font": 98WB-1.otf #符號字型

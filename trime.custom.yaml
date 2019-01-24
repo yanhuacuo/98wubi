@@ -1,0 +1,76 @@
+patch:  
+  "style/candidate_text_size": 22 #候選字號
+  "style/candidate_view_height": 24 #候選區高度
+  "style/window/@0/move": ' '  #注释掉㞢符
+  "style/comment_text_size": 16 #編碼提示字號
+  "style/key_text_size": 16 #鍵字號
+  "style/comment_height": 18 #編碼提示區高度
+  "style/candidate_font": 98WB-1.otf #候選字型
+  "style/hanb_font": 98WB-1.otf #擴充字型
+  "style/symbol_font": 98WB-1.otf #符號字型
+
+  "preset_keyboards/number/height": 60
+  "preset_keyboards/qwerty":
+    name: 預設26鍵
+    author: "osfans <waxaca@163.com>"
+    ascii_mode: 0
+    columns: 10 #鍵盤列數，超過則自動換行，默認30列
+    width: 10
+    height: 60
+    lock: true
+    key_symbol_offset_x: 0
+    key_symbol_offset_y: 0
+    key_text_offset_x: 0
+    key_text_offset_y: 0
+    key_hint_offset_x: 0
+    key_hint_offset_y: 0
+    key_press_offset_x: 2
+    key_press_offset_y: 2
+    keys:
+    - {click: '1', long_click: '《》{Left}',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: '2', long_click: '·',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: '3', long_click: '「」{Left}',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: '4', long_click: '、',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: '5', long_click: '/',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: '6', long_click: '……',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: '7', long_click: '|',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: '8', long_click: '=',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: '9', long_click: '_',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: '0', long_click: 'Hide',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: 'q', long_click: '!'}
+    - {click: 'w', long_click: '@'}
+    - {click: 'e', long_click: '#'}
+    - {click: 'r', long_click: '$'}
+    - {click: 't', long_click: '%'}
+    - {click: 'y', long_click: '^'}
+    - {click: 'u', long_click: '&'}
+    - {click: 'i', long_click: '*'}
+    - {click: 'o', long_click: '(){Left}'}
+    - {click: 'p', long_click: 'Date'}
+    - {width: 5}
+    - {click: 'a', long_click: select_all}
+    - {click: 's', long_click: '~'}
+    - {click: 'd', long_click: '-'}
+    - {click: 'f', long_click: '+'}
+    - {click: 'g', long_click: '\'}
+    - {click: 'h', long_click: '[]{Left}'}
+    - {click: 'j', long_click: '{}{Left}'}
+    - {click: 'k', long_click: ':'}
+    - {click: 'l', long_click: ';'}
+    - {width: 5}
+    - {click: Shift_L, send_bindings: false, width: 15}
+    - {click: 'z', long_click: '`'}
+    - {click: 'x', long_click: cut}
+    - {click: 'c', long_click: copy}
+    - {click: 'v', long_click: paste}
+    - {click: 'b', long_click: Time}
+    - {click: 'n', long_click: '"'}
+    - {click: 'm', long_click: "'"}
+    - {click: BackSpace,swipe_left: 'BackSpace', swipe_right: 'BackSpace', swipe_up: 'BackSpace', swipe_down: 'BackSpace',width: 15}
+    - {click: Mode_switch, long_click: Menu,swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide', width: 15}
+    - {click: Keyboard_symbols, long_click: Keyboard_number,swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: ',', long_click: '<',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: space,swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide', width: 30}
+    - {click: '.', long_click: '>',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide',}
+    - {click: '/', long_click: '?',swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide'}
+    - {click: Return, long_click: CommitComment,swipe_left: 'Hide', swipe_right: 'Hide', swipe_up: 'Hide', swipe_down: 'Hide', width: 15}
