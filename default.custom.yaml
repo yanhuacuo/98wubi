@@ -1,0 +1,34 @@
+# Rime default custom settings
+# encoding: utf-8
+
+patch:
+#補丁內容
+  # ↓ 以下2條爲Shift切換中英狀態時將當前編碼上屏 
+  "ascii_composer/switch_key/Shift_L": commit_code
+  "ascii_composer/switch_key/Shift_R": commit_code
+  schema_list:
+    #方案列表
+    - {schema: wubi98_dz}	
+    - {schema: wubi98_ci}	
+    - {schema: py}
+  key_binder:
+    bindings:
+      - {accept: minus, send: Page_Up, when: has_menu}
+      - {accept: equal, send: Page_Down, when: has_menu}
+      - {accept: semicolon, send: 2, when: has_menu}
+      - {accept: apostrophe, send: 3, when: has_menu}
+      - {accept: space, send: Escape, when: composing}
+      - {accept: space, send: space, when: has_menu}
+      - {accept: Return, send: Escape, when: composing}
+      - {accept: Return, send: Escape, when: has_menu}
+      - {accept: "Control+Shift+4", toggle: zh_trad, when: always}
+      - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
+      - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
+      - {accept: "Control+Shift+H", toggle: 98wb_spelling, when: always}
+      - {accept: "Control+Shift+J", toggle: 98wb_spelling, when: always} 
+      - {accept: "Control+Shift+K", toggle: 98wb_spelling, when: always}
+      - {accept: "Control+Shift+U", toggle: gb2312, when: always} 
+      - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
+      - {accept: "Control+Shift+O", toggle: gb2312, when: always}
+      - {accept: Left, send: Up, when: has_menu}
+      - {accept: Right, send: Down, when: has_menu}
