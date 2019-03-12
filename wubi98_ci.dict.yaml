@@ -10468,6 +10468,7 @@ encoder:
 不怕	dhnr	3623580	
 不愧	dhnr	3623560	
 不必	dhnt	3623540	
+不悔	dhnt	3623539	
 不悦	dhnu	3623520	
 不惟	dhnw	3623500	
 不惯	dhnx	3623480	
@@ -11073,6 +11074,7 @@ encoder:
 奋战	dlhk	3611480	
 面点	dlhk	3611460	
 面具	dlhw	3611440	
+面汤	dlin	3611439	
 面洽	dliw	3611420	
 三国演义	dliy	3611400	
 面	dlj	3611380	dljf
@@ -11115,6 +11117,7 @@ encoder:
 奋发	dlnt	3610640	
 奋飞	dlnu	3610620	
 面庞	dlod	3610600	
+面糊	dlod	3610599	
 面料	dlou	3610580	
 面粉	dlow	3610560	
 䃛	dlph	3610540	dlph
@@ -13100,6 +13103,7 @@ encoder:
 不谋而合	dydw	3570940	
 太太	dydy	3570920	
 不离不弃	dydy	3570900	
+不言不语	dydy	3570899	
 大放厥词	dydy	3570880	
 㕈	dyei	3570860	dyei
 䃷	dyey	3570840	dyey
@@ -13605,7 +13609,6 @@ encoder:
 毛毛虫	eejh	3560840	
 月晕	eejp	3560820	
 月影	eejy	3560800	
-月号	eekg	3560780	
 月中	eekh	3560760	
 月圆	eelk	3560740	
 月轮	eelw	3560720	
@@ -14606,7 +14609,6 @@ encoder:
 受敌	eptd	3540820	
 受制	eptg	3540800	
 脓血	eptl	3540780	
-爱乐	eptn	3540760	
 爱称	eptq	3540740	
 爱笑	eptt	3540720	
 受冻	epua	3540700	
@@ -15521,7 +15523,6 @@ encoder:
 股份	ewww	3522520	
 股价	ewww	3522500	
 脸红	ewxa	3522480	
-办结	ewxf	3522460	
 脸熟	ewyb	3522440	
 䐪	ewyb	3522420	ewyb
 朎	ewyc	3522400	ewyc
@@ -17834,7 +17835,6 @@ encoder:
 进兵	fjrw	3476260	
 刊本	fjsg	3476240	
 翰林	fjss	3476220	
-进校	fjsu	3476200	
 堁	fjsy	3476180	fjsy
 乾	fjt	3476160	fjtn
 无师自通	fjtc	3476140	
@@ -18027,7 +18027,6 @@ encoder:
 欯	fkqw	3472400	fkqw
 吉凶	fkrb	3472380	
 喜报	fkrb	3472360	
-喜看	fkrh	3472340	
 鼓捣	fkrq	3472320	
 露白	fkrr	3472300	
 喜气	fkrt	3472280	
@@ -18505,7 +18504,6 @@ encoder:
 声闻	fnub	3462840	
 卖	fnud	3462820	fnud
 专美	fnug	3462800	
-场站	fnuh	3462780	
 䬠	fnuh	3462760	fnuh
 声音	fnuj	3462740	
 违章	fnuj	3462720	
@@ -19789,7 +19787,6 @@ encoder:
 老姨	ftvg	3437160	
 老巢	ftvj	3437140	
 堆积如山	ftvm	3437120	
-都灵	ftvo	3437100	
 老九	ftvt	3437080	
 老君	ftvt	3437060	
 才女	ftvv	3437040	
@@ -20158,7 +20155,6 @@ encoder:
 无风起浪	fwfi	3429780	
 暬	fwfj	3429760	fwfj
 䞇	fwfm	3429740	fwfm
-堆场	fwfn	3429720	
 熱	fwfo	3429700	fwfo
 燅	fwfo	3429680	fwfo
 驇	fwfo	3429660	fwfo
@@ -25741,7 +25737,6 @@ encoder:
 战袍	hkpu	3318120	
 点穴	hkpw	3318100	
 战祸	hkpy	3318080	
-点解	hkqe	3318060	
 点钱	hkqg	3318040	
 点钞	hkqi	3318020	
 点名	hkqk	3318000	
@@ -25762,7 +25757,6 @@ encoder:
 点歌	hksk	3317700	
 战歌	hksk	3317680	
 战栗	hkss	3317660	
-点校	hksu	3317640	
 战机	hksw	3317620	
 战术	hksy	3317600	
 战乱	hktd	3317580	
@@ -34685,6 +34679,7 @@ encoder:
 吃苦耐劳	kada	3139260	
 哈萨克斯坦	kadf	3139240	
 喏	kadk	3139220	kadk
+跌荡不羁	kadl	3139219	
 㘃	kadn	3139200	kadn
 哈萨克	kadq	3139180	
 叫苦不迭	kadt	3139160	
@@ -35827,6 +35822,7 @@ encoder:
 中兴	khig	3116420	
 跋涉	khih	3116400	
 跳水	khii	3116380	
+跌水	khii	3116379	
 踏	khij	3116360	khij
 䠀	khik	3116340	khik
 遗漏	khin	3116320	
@@ -35875,6 +35871,7 @@ encoder:
 中路	khkh	3115460	
 践踏	khkh	3115440	
 蹊跷	khkh	3115420	
+跌跤	khkh	3115420	
 踌躇	khkh	3115400	
 蹂躏	khkh	3115380	
 踊跃	khkh	3115360	
@@ -35885,6 +35882,7 @@ encoder:
 蹦跳	khkh	3115260	
 踟蹰	khkh	3115240	
 跑路	khkh	3115220	
+跌足	khkh	3115220	
 踀	khkh	3115200	khkh
 路口	khkk	3115180	
 蹪	khkm	3115160	khkm
@@ -36236,6 +36234,7 @@ encoder:
 遗像	khwq	3108240	
 跟风	khwr	3108220	
 中风	khwr	3108200	
+跌风	khwr	3108199	
 遗体	khws	3108180	
 跺	khws	3108160	khws
 䟻	khws	3108140	khws
@@ -36492,6 +36491,7 @@ encoder:
 口感	kkdg	3103120	
 呼呼大睡	kkdh	3103100	
 嚣	kkdk	3103080	kkdk
+跌足大叹	kkdk	3103079	
 器	kkdk	3103060	kkdk
 嚻	kkdk	3103040	kkdk
 囂	kkdk	3103020	kkdk
@@ -37039,6 +37039,7 @@ encoder:
 㗷	kpam	3092180	kpam
 㘔	kpam	3092160	kpam
 嗐	kpdk	3092140	kpdk
+跌宕不羁	kpdl	3092139	
 只字不提	kpdr	3092120	
 喧宾夺主	kpdy	3092100	
 哝	kpe	3092080	kpey
@@ -40082,7 +40083,6 @@ encoder:
 略谈	ltyo	3031320	
 略施	ltyt	3031300	
 图谱	ltyu	3031280	
-略论	ltyw	3031260	
 图文	ltyy	3031240	
 较	lu	3031220	lury
 圈	lu	3031200	lugb
@@ -47727,6 +47727,7 @@ encoder:
 廀	opoc	2878420	opoc
 迷糊	opod	2878400	
 熔断	opon	2878380	
+精神焕发	opon	2878379	
 熔炉	opoy	2878360	
 迷宫	oppk	2878340	
 焥	opqb	2878320	opqb
@@ -48368,7 +48369,6 @@ encoder:
 庠	ouk	2865600	ouk
 廍	oukb	2865580	oukb
 焙	oukg	2865560	oukg
-料中	oukh	2865540	
 料器	oukk	2865520	
 熷	oulj	2865500	oulj
 料峭	oumi	2865480	
@@ -57766,6 +57766,7 @@ encoder:
 择优	rcwd	2677700	
 瓜仁	rcwf	2677680	
 反倒	rcwg	2677660	
+反例	rcwg	2677659	
 拚命	rcwg	2677640	
 揉合	rcwg	2677620	
 挨个	rcwh	2677600	
@@ -60622,6 +60623,7 @@ encoder:
 手推车	rrlg	2620600	
 折回	rrlk	2620580	
 扳回	rrlk	2620560	
+兜兜转转	rrll	2620559	
 白轴	rrlm	2620540	
 哲思	rrln	2620520	
 抓图	rrlt	2620500	
@@ -67679,10 +67681,10 @@ encoder:
 利用率	teyx	2479460	
 等	tf	2479440	tffu
 街	tf	2479420	tffs
-垂	tfa	2479400	tfaf
+垂	tfa	2479400	tfad
 等式	tfaa	2479380	
 选项	tfad	2479360	
-垂	tfaf	2479340	tfaf
+垂	tfad	2479340	tfad
 乖巧	tfag	2479320	
 籖	tfag	2479300	tfag
 垂落	tfai	2479280	
@@ -68210,8 +68212,8 @@ encoder:
 重工	tgaa	2468840	
 失节	tgab	2468820	
 熏蒸	tgab	2468800	
-郵	tgab	2468780	tgab
-㩾	tgac	2468760	tgac
+郵	tfab	2468780	tfab
+㩾	tfac	2468760	tfac
 生菜	tgae	2468740	
 失散	tgae	2468720	
 牛鞭	tgaf	2468700	
@@ -68221,23 +68223,23 @@ encoder:
 䄯	tgah	2468620	tgah
 失落	tgai	2468600	
 笄	tgaj	2468580	tgaj
-剰	tgaj	2468560	tgaj
+剰	tajh	2468560	tajh
 筭	tgaj	2468540	tgaj
 㣜	tgaj	2468520	tgaj
 牛黄	tgam	2468500	
 舞艺	tgan	2468480	
-䳠	tgao	2468460	tgao
+䳠	tfao	2468460	tfao
 行营	tgap	2468440	
 失敬	tgaq	2468420	
 行政区	tgar	2468400	
-乗	tgas	2468380	tgas
+乗	tad	2468380	tad
 行医	tgat	2468360	
 年薪	tgau	2468340	
 笺	tgau	2468320	tgau
 生恐	tgaw	2468300	
 制药	tgax	2468280	
 生药	tgax	2468260	
-甀	tgay	2468240	tgay
+甀	tfay	2468240	tfay
 生子	tgbb	2468220	
 重聚	tgbc	2468200	
 牛耳	tgbg	2468180	
@@ -78342,7 +78344,6 @@ encoder:
 絮	vkxi	2266220	vkxi
 如织	vkxk	2266200	
 如约	vkxq	2266180	
-如为	vkye	2266160	
 䘫	vkye	2266140	vkye
 如诗	vkyf	2266120	
 絮语	vkyg	2266100	
@@ -85593,8 +85594,8 @@ encoder:
 綽	xhjh	2121220	xhjh
 纵虎归山	xhjm	2121200	
 弔	xhk	2121180	xhk
+引号	xhkg	2121179	
 绰号	xhkg	2121160	
-引号	xhkg	2121140	
 引路	xhkh	2121120	
 盄	xhlf	2121100	xhlf
 纑	xhll	2121080	xhll
@@ -91644,12 +91645,11 @@ encoder:
 方言	yyyy	2000200	
 文言	yyyy	2000180	
 言	yyyy	2000160	yyyy
-龰	hhgy	2000160	hhgy
-，	yz	2000140	
-。	yz	2000120	
-！	yz	2000100	
-、	yz	2000080	
-？	yz	2000060	
-：	yz	2000040	
-—	yz	2000020	
-；	yz	2000000	
+，	yz	2000160	
+。	yz	2000160	
+！	yz	2000160	
+、	yz	2000160	
+？	yz	2000160	
+：	yz	2000160	
+—	yz	2000160	
+；	yz	2000160	
