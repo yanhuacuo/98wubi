@@ -24,6 +24,8 @@ switches:
     states: [ 简,繁 ]
   - name: 98wb_spelling
     reset: 1
+  - name: 98wb_spelling_rk
+    reset: 1    
     states: [ 隐,显 ]    
   - name: jiayin
     reset: 1
@@ -36,7 +38,8 @@ engine:
     - charset_filter@gb2312  
     - simplifier
     - "reverse_lookup_filter@ci_reverse_lookup"
-    - "simplifier@98wb_spelling"    
+    - "simplifier@98wb_spelling_rk"
+    - "simplifier@98wb_spelling"
     - "simplifier@jiayin"
     - uniquifier
   processors:
@@ -141,11 +144,26 @@ simplifier:
   option_name: 98wb_spelling
   show_in_comment: true
   comment_format:
+    - "xform/☯/ · /"    
     - "xform/<br>/\r/"
     - "xform/※※※/ /"    
     - "xform/※/ /"
   tags:
     - abc
+#   - rvlk1
+  tips: all 
+
+98wb_spelling_rk:
+  opencc_config: 98wb_spelling_rk.json
+  option_name: 98wb_spelling_rk
+  show_in_comment: true
+  comment_format:
+    - "xform/☯/ · /"    
+    - "xform/<br>/\r/"
+    - "xform/※※※/ /"    
+    - "xform/※/ /"
+  tags:
+#   - abc
     - rvlk1
   tips: all 
 
@@ -185,6 +203,8 @@ history:
 
 key_binder:
   bindings:
+    - {accept: Left, send: Up, when: has_menu}
+    - {accept: Right, send: Down, when: has_menu}  
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: semicolon, send: 2, when: has_menu}
@@ -202,9 +222,31 @@ key_binder:
     - {accept: "Control+Shift+U", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+O", toggle: gb2312, when: always}
-  import_preset: default
+
 punctuator:
   import_preset: symbols
   
 menu:
   page_size: 5  
+  
+style:
+  color_scheme: dark_temple
+  font_face: 98WB-1
+  font_point: 22
+  horizontal: false
+  fullscreen: false
+  inline_preedit: false
+  preedit_type: composition
+  display_tray_icon: false
+  label_format: "%s."
+  layout:
+    min_width: 160
+    min_height: 0
+    border_width: 3
+    margin_x: 12
+    margin_y: 12
+    spacing: 10
+    candidate_spacing: 5
+    hilite_spacing: 4
+    hilite_padding: 2
+    round_corner: 4

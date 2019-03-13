@@ -141,6 +141,7 @@ simplifier:
   option_name: 98wb_spelling
   show_in_comment: true
   comment_format:
+    - "xform/☯/ · /"    
     - "xform/<br>/\r/"
     - "xform/※※※/ /"    
     - "xform/※/ /"
@@ -184,6 +185,8 @@ history:
 
 key_binder:
   bindings:
+    - {accept: Left, send: Up, when: has_menu}
+    - {accept: Right, send: Down, when: has_menu}  
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: semicolon, send: 2, when: has_menu}
@@ -201,9 +204,31 @@ key_binder:
     - {accept: "Control+Shift+U", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+O", toggle: gb2312, when: always}
-  import_preset: default	
+
 punctuator:
   import_preset: symbols  
 
 menu:
   page_size: 5  
+
+style:
+  color_scheme: dota_2
+  font_face: 98WB-1
+  font_point: 22
+  horizontal: true
+  fullscreen: false
+  inline_preedit: true
+  preedit_type: composition
+  display_tray_icon: false
+  label_format: "%s."
+  layout:
+    min_width: 0
+    min_height: 0
+    border_width: 0
+    margin_x: 12
+    margin_y: 12
+    spacing: 10
+    candidate_spacing: 22
+    hilite_spacing: 4
+    hilite_padding: 12
+    round_corner: 0

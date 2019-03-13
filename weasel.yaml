@@ -10,26 +10,26 @@ app_options:
     ascii_mode: true
 
 style:
-  color_scheme: dota_2
+  color_scheme: dark_temple
   font_face: 98WB-1
-  font_point: 17
-  horizontal: true
+  font_point: 22
+  horizontal: false
   fullscreen: false
-  inline_preedit: true
+  inline_preedit: false
   preedit_type: composition
   display_tray_icon: false
   label_format: "%s."
   layout:
-    min_width: 0
+    min_width: 160
     min_height: 0
     border_width: 3
     margin_x: 12
     margin_y: 12
     spacing: 10
-    candidate_spacing: 22
+    candidate_spacing: 5
     hilite_spacing: 4
-    hilite_padding: 12
-    round_corner: 0
+    hilite_padding: 2
+    round_corner: 4
 
 preset_color_schemes:
   aqua:
