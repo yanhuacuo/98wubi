@@ -12,6 +12,8 @@ rm -rf ./*.ocd
 
 echo "清理完毕，开始制作 Linux 专属 OCD 文件"
 
+opencc_dict -i 98wb_spelling_rk.txt -o 98wb_spelling_rk.ocd -f text -t ocd
+
 opencc_dict -i 98wb_spelling.txt -o 98wb_spelling.ocd -f text -t ocd
 
 opencc_dict -i jiayin.txt -o jiayin.ocd -f text -t ocd
