@@ -1,0 +1,16 @@
+{
+  "name": "98wb_spelling_rk",
+  "segmentation": {
+    "type": "mmseg",
+    "dict": {
+      "type": "ocd",
+      "file": "98wb_spelling_rk.ocd"
+    }
+  },
+  "conversion_chain": [{
+    "dict": {
+      "type": "ocd",
+      "file": "98wb_spelling_rk.ocd"
+    }
+  }]
+}
