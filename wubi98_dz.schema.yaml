@@ -18,7 +18,7 @@ schema:
 
 switches:
   - name: ascii_mode
-    reset: 1
+    reset: 0
   - name: zh_trad
     reset: 0
     states: [ 简,繁 ]
@@ -217,7 +217,7 @@ key_binder:
     - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+H", toggle: 98wb_spelling, when: always}
-    - {accept: "Control+Shift+J", toggle: 98wb_spelling, when: always} 
+    - {accept: "Control+Shift+J", toggle: 98wb_spelling_rk, when: always} 
     - {accept: "Control+Shift+K", toggle: 98wb_spelling, when: always}
     - {accept: "Control+Shift+U", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
@@ -228,25 +228,3 @@ punctuator:
   
 menu:
   page_size: 5  
-  
-style:
-  color_scheme: dark_temple
-  font_face: 98WB-1
-  font_point: 22
-  horizontal: false
-  fullscreen: false
-  inline_preedit: false
-  preedit_type: composition
-  display_tray_icon: false
-  label_format: "%s."
-  layout:
-    min_width: 160
-    min_height: 0
-    border_width: 3
-    margin_x: 12
-    margin_y: 12
-    spacing: 10
-    candidate_spacing: 5
-    hilite_spacing: 4
-    hilite_padding: 2
-    round_corner: 4
