@@ -1,0 +1,16 @@
+{
+  "name": "single",
+  "segmentation": {
+    "type": "mmseg",
+    "dict": {
+      "type": "ocd",
+      "file": "single.ocd"
+    }
+  },
+  "conversion_chain": [{
+    "dict": {
+      "type": "ocd",
+      "file": "single.ocd"
+    }
+  }]
+}
