@@ -22,7 +22,6 @@ encoder:
     - length_in_range: [4, 32]
       formula: "AaBaCaZa"
 ...
-
 工	a	3832400	aaaa
 戈	a	3832380	agny
 式	aa	3832360	aayi
@@ -91645,7 +91644,6 @@ encoder:
 方言	yyyy	2000200	
 文言	yyyy	2000180	
 言	yyyy	2000160	yyyy
-龰	hhgy	2000160	hhgy
 ，	yz	2000160	
 。	yz	2000160	
 ！	yz	2000160	
