@@ -145,8 +145,9 @@ simplifier:
   show_in_comment: true
   comment_format:
     - "xform/☯/ · /"    
-    - "xform/<br>/\r/"
-    - "xform/※※※/ /"    
+    - "xform/<br>/\r/"     
+    - "xform/※※※/ /" 
+    - "xform/※※/ /"     
     - "xform/※/ /"
   tags:
     - abc
@@ -159,8 +160,9 @@ simplifier:
   show_in_comment: true
   comment_format:
     - "xform/☯/ · /"    
-    - "xform/<br>/\r/"
-    - "xform/※※※/ /"    
+    - "xform/<br>/\r/"    
+    - "xform/※※※/ /"
+    - "xform/※※/ /"    
     - "xform/※/ /"
   tags:
 #   - abc

@@ -12,7 +12,7 @@ app_options:
 style:
   color_scheme: dark_temple
   font_face: 98WB-0
-  font_point: 22
+  font_point: 18
   horizontal: false
   fullscreen: false
   inline_preedit: false
