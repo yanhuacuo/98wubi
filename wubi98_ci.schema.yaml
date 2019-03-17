@@ -211,25 +211,3 @@ punctuator:
 
 menu:
   page_size: 5  
-
-style:
-  color_scheme: dota_2
-  font_face: 98WB-0
-  font_point: 22
-  horizontal: true
-  fullscreen: false
-  inline_preedit: true
-  preedit_type: composition
-  display_tray_icon: false
-  label_format: "%s."
-  layout:
-    min_width: 0
-    min_height: 0
-    border_width: 0
-    margin_x: 12
-    margin_y: 12
-    spacing: 10
-    candidate_spacing: 22
-    hilite_spacing: 4
-    hilite_padding: 12
-    round_corner: 0
