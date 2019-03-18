@@ -22,9 +22,9 @@ switches:
   - name: zh_trad
     reset: 0
     states: [ 简,繁 ]
-  - name: 98wb_spelling
-    reset: 1
   - name: 98wb_spelling_rk
+    reset: 1
+  - name: 98wb_spelling
     reset: 1    
     states: [ 隐,显 ]    
   - name: jiayin
@@ -219,7 +219,7 @@ key_binder:
     - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+H", toggle: 98wb_spelling, when: always}
-    - {accept: "Control+Shift+J", toggle: 98wb_spelling, when: always} 
+    - {accept: "Control+Shift+J", toggle: 98wb_spelling_rk, when: always} 
     - {accept: "Control+Shift+K", toggle: 98wb_spelling, when: always}
     - {accept: "Control+Shift+U", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
