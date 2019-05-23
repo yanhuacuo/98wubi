@@ -5,7 +5,7 @@
 
 schema:
   schema_id: wubi98_ci
-  name: "98五笔·含词"
+  name: "五笔·含词"
   version: "5.0"
   author:
     - 發明人 王永民
@@ -18,7 +18,7 @@ schema:
 
 switches:
   - name: ascii_mode
-    reset: 1
+    reset: 0
   - name: zh_trad
     reset: 0
     states: [ 简,繁 ]
@@ -211,3 +211,4 @@ punctuator:
 
 menu:
   page_size: 5  
+
