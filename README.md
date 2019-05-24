@@ -43,3 +43,11 @@
 * Ctrl + Shift + H = 拆分提示开关
 * Ctrl + Shift + F = 繁简转换开关
 * Ctrl + Shift + U = 字符集过滤开关
+
+## 多平台通用
+
+在安卓上面，可以实现如下效果
+
+![0](https://raw.githubusercontent.com/yanhuacuo/98wubi/master/linux/0.png)
+![0](https://raw.githubusercontent.com/yanhuacuo/98wubi/master/linux/1.png)
+![0](https://raw.githubusercontent.com/yanhuacuo/98wubi/master/linux/%E6%89%93%E5%AD%97%E7%A4%BA%E6%84%8F.png)
