@@ -16,7 +16,7 @@
 
 * 「z」键引导：临时拼音三重反查
 
-![三反查.png](https://raw.githubusercontent.com/yanhuacuo/98wubi/master/linux/%E5%8F%8D%E6%9F%A5%E5%8A%9F%E8%83%BD.gif)
+![三反查.png](https://raw.githubusercontent.com/omgredfog/98wubi/master/linux/11.gif)
 
 * 「`」键引导：精准造词
 
