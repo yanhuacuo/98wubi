@@ -5,7 +5,7 @@
 
 schema:
   schema_id: wubi98_ci
-  name: "五笔·含词"
+  name: "含词"
   version: "5.0"
   author:
     - 發明人 王永民
@@ -30,7 +30,7 @@ switches:
   - name: gb2312
     reset: 0
     states: [ 扩,常 ]
-    
+
 engine:
   filters:
     - charset_filter@gb2312  
@@ -66,7 +66,7 @@ engine:
     - "table_translator@mkst"
     - "table_translator@zhuyin_fix"
     - "history_translator@history"
-	
+    - "lua_translator@time_date"
 speller:
   auto_select: true
   auto_clear: max_length
@@ -201,7 +201,7 @@ key_binder:
     - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+H", toggle: 98wb_spelling, when: always}
     - {accept: "Control+Shift+J", toggle: 98wb_spelling, when: always} 
-    - {accept: "Control+Shift+K", toggle: 98wb_spelling, when: always}
+    - {accept: "Control+Shift+K", toggle: 98wb_spelling_rk, when: always}
     - {accept: "Control+Shift+U", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+O", toggle: gb2312, when: always}
