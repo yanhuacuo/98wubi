@@ -32,7 +32,7 @@ switches:
   - name: gb2312
     reset: 0
     states: [ 扩,常 ]
-    
+
 engine:
   filters:
     - charset_filter@gb2312  
@@ -75,7 +75,7 @@ speller:
   auto_clear: max_length
   delimiter: "`"
   max_code_length: 4
-  
+
 translator:
   dictionary: wubi98_dz.extended
   db_class: tabledb
@@ -95,7 +95,7 @@ fixed:
   initial_quality: 1000
   enable_encoder: true
   enable_user_dict: true
-  
+
 mkst:
   __include: /translator
   initial_quality: 10
@@ -113,21 +113,21 @@ reverse_lookup:
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
   tag: rvlk2
-    
+
 rvlk1:
   __include: /reverse_lookup
   prefix: "z"
   tag: rvlk1
   extra_tags:
     - rvlk2  
-    
+
 
 ci_reverse_lookup:
   dictionary: wubi98_dz.extended
   tips: "〔五笔滤镜〕"
   tags:
     - rvlk2
-    
+
 zhuyin_fix:
   __include: /translator
   prefix: '~'
@@ -196,17 +196,15 @@ recognizer:
 
 charset_filter:
   option_name: gb2312
-  
+
+
 history:
   input: z
   size: 1
   initial_quality: 1
-  
 
 key_binder:
   bindings:
-    - {accept: Left, send: Up, when: has_menu}
-    - {accept: Right, send: Down, when: has_menu}  
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: semicolon, send: 2, when: has_menu}
@@ -227,6 +225,6 @@ key_binder:
 
 punctuator:
   import_preset: symbols
-  
+
 menu:
   page_size: 5  
