@@ -1,4 +1,4 @@
-# by yanhuacuo 2019-01-03
+﻿# by yanhuacuo 2019-01-03
 # 配置整合版
 # Rime schema settings
 # encoding: utf-8
@@ -30,6 +30,7 @@ switches:
   - name: gb2312
     reset: 0
     states: [ 扩,常 ]
+
 
 engine:
   filters:
@@ -72,7 +73,7 @@ speller:
   auto_clear: max_length
   delimiter: "`"
   max_code_length: 4
-
+  
 translator:
   dictionary: wubi98_ci.extended
   db_class: tabledb
@@ -110,21 +111,21 @@ reverse_lookup:
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
   tag: rvlk2
-
+    
 rvlk1:
   __include: /reverse_lookup
   prefix: "z"
   tag: rvlk1
   extra_tags:
     - rvlk2  
-
+    
 
 ci_reverse_lookup:
   dictionary: wubi98_ci.extended
   tips: "〔五笔滤镜〕"
   tags:
     - rvlk2
-
+    
 zhuyin_fix:
   __include: /translator
   prefix: '~'
@@ -175,10 +176,10 @@ recognizer:
     uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
     zhuyin_fix: "~[a-y]*?$"
-
+	
 charset_filter:
   option_name: gb2312
-
+  
 history:
   input: z
   size: 1
@@ -186,6 +187,8 @@ history:
 
 key_binder:
   bindings:
+    - {accept: Left, send: Up, when: has_menu}
+    - {accept: Right, send: Down, when: has_menu}  
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: semicolon, send: 2, when: has_menu}
