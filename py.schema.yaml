@@ -10,7 +10,6 @@ schema:
   description: |
     源自 Android 拼音
   dependencies:
-    - wubi98_dz
     - wubi98_ci
 
 switches:
@@ -41,7 +40,6 @@ engine:
     - reverse_lookup_translator
   filters:
     - simplifier
-    - reverse_lookup_filter@dz_reverse_lookup
     - reverse_lookup_filter@ci_reverse_lookup
     - uniquifier
 
@@ -80,13 +78,6 @@ recognizer:
   patterns:
     punct: '^/([0-9]0?|[A-Za-z]+)$'
     reverse_lookup: "^z[a-z]*'?$"
-
-    
-dz_reverse_lookup:
-  dictionary: wubi98_dz.extended
-  overwrite_comment: true
-  enable_completion: true
-  tips: 〔五笔1〕
   
 ci_reverse_lookup:
   dictionary: wubi98_ci.extended

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install ibus-rime opencc fcitx-rime -y
+sudo apt install ibus-rime opencc -y
 
 cd ../opencc/
 
@@ -10,15 +10,17 @@ rm -rf ~/*.ocd
 
 echo "清理完毕，开始制作 Linux 专属 OCD 文件"
 
+
 opencc_dict -i 98wb_spelling.txt -o 98wb_spelling.ocd -f text -t ocd
-
+opencc_dict -i phrase.txt -o phrase.ocd -f text -t ocd
+opencc_dict -i single.txt -o single.ocd -f text -t ocd
+opencc_dict -i double.txt -o double.ocd -f text -t ocd
+opencc_dict -i three.txt -o three.ocd -f text -t ocd
 opencc_dict -i 98wb_spelling_rk.txt -o 98wb_spelling_rk.ocd -f text -t ocd
-
 opencc_dict -i jiayin.txt -o jiayin.ocd -f text -t ocd
-
 opencc_dict -i STCharacters.txt -o STCharacters.ocd -f text -t ocd
-
 opencc_dict -i STPhrases.txt -o STPhrases.ocd -f text -t ocd
+
 
 sudo chmod 777 ./*
 

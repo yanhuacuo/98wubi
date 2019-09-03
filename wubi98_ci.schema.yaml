@@ -1,11 +1,11 @@
-﻿# by yanhuacuo 2019-01-03
+# by yanhuacuo 2019-01-03
 # 配置整合版
 # Rime schema settings
 # encoding: utf-8
 
 schema:
   schema_id: wubi98_ci
-  name: "含词"
+  name: "五笔"
   version: "5.0"
   author:
     - 發明人 王永民
@@ -22,22 +22,24 @@ switches:
   - name: zh_trad
     reset: 0
     states: [ 简,繁 ]
+  - name: 98wb_spelling_rk
+    reset: 1
   - name: 98wb_spelling
-    reset: 0
+    reset: 1    
     states: [ 隐,显 ]    
   - name: jiayin
     reset: 1
   - name: gb2312
     reset: 0
     states: [ 扩,常 ]
-
-
+    
 engine:
   filters:
     - charset_filter@gb2312  
     - simplifier
     - "reverse_lookup_filter@ci_reverse_lookup"
-    - "simplifier@98wb_spelling"    
+    - "simplifier@98wb_spelling_rk"
+    - "simplifier@98wb_spelling"
     - "simplifier@jiayin"
     - uniquifier
   processors:
@@ -149,6 +151,21 @@ simplifier:
     - "xform/※/ /"
   tags:
     - abc
+#   - rvlk1
+  tips: all 
+
+98wb_spelling_rk:
+  opencc_config: 98wb_spelling_rk.json
+  option_name: 98wb_spelling_rk
+  show_in_comment: true
+  comment_format:
+    - "xform/☯/ · /"    
+    - "xform/<br>/\r/"
+    - "xform/※※※/ /"
+    - "xform/※※/ /"    
+    - "xform/※/ /"
+  tags:
+#   - abc
     - rvlk1
   tips: all 
 
@@ -184,6 +201,7 @@ history:
   input: z
   size: 1
   initial_quality: 1
+  
 
 key_binder:
   bindings:
@@ -208,8 +226,7 @@ key_binder:
     - {accept: "Control+Shift+O", toggle: gb2312, when: always}
 
 punctuator:
-  import_preset: symbols  
-
+  import_preset: symbols
+  
 menu:
-  page_size: 5  
-
+  page_size: 9  

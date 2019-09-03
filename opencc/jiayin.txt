@@ -6881,7 +6881,7 @@
 呏	shēng
 呐	nà&nbspnè
 呑	tūn&nbsptiān
-呒	fǔ&nbspḿ
+呒	fǔ&nbspmú
 呓	yì
 呔	dāi
 呕	ǒu&nbspōu&nbspòu
@@ -6898,7 +6898,7 @@
 呠	pěn
 呡	wěn&nbspmǐn
 呢	ní&nbspne
-呣	ḿ&nbspm̀&nbspmóu
+呣	mú&nbspmù&nbspmóu
 呤	líng
 呥	rán
 呦	yōu
@@ -7367,7 +7367,7 @@
 嘵	xiāo
 嘶	sī
 嘷	háo
-嘸	fǔ&nbspḿ
+嘸	fǔ&nbspmú
 嘹	liáo
 嘺	qiáo&nbspqiào
 嘻	xī

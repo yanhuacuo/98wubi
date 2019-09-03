@@ -9,8 +9,14 @@
   },
   "conversion_chain": [{
     "dict": {
-      "type": "ocd",
-      "file": "98wb_spelling.ocd"
+      "type": "group",
+      "dicts": [{
+        "type": "ocd",
+        "file": "98wb_spelling.ocd"
+      }, {
+        "type": "ocd",
+        "file": "phrase.ocd"
+      }]
     }
   }]
 }
