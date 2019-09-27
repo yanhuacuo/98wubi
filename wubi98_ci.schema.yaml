@@ -177,7 +177,7 @@ recognizer:
     uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
     zhuyin_fix: "~[a-y]*?$"
-	
+
 charset_filter:
   option_name: gb2312
 
