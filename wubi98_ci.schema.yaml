@@ -180,17 +180,14 @@ recognizer:
 	
 charset_filter:
   option_name: gb2312
-  
+
 history:
   input: z
   size: 1
   initial_quality: 1
-  
 
 key_binder:
   bindings:
-    - {accept: Left, send: Up, when: has_menu}
-    - {accept: Right, send: Down, when: has_menu}  
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: semicolon, send: 2, when: has_menu}
