@@ -18,14 +18,12 @@ schema:
 
 switches:
   - name: ascii_mode
-    reset: 0
+    reset: 1
   - name: zh_trad
     reset: 0
     states: [ 简,繁 ]
-  - name: 98wb_spelling_rk
-    reset: 1
   - name: 98wb_spelling
-    reset: 1    
+    reset: 0 
     states: [ 隐,显 ]    
   - name: jiayin
     reset: 1
@@ -154,20 +152,6 @@ simplifier:
 #   - rvlk1
   tips: all 
 
-98wb_spelling_rk:
-  opencc_config: 98wb_spelling_rk.json
-  option_name: 98wb_spelling_rk
-  show_in_comment: true
-  comment_format:
-    - "xform/☯/ · /"    
-    - "xform/<br>/\r/"
-    - "xform/※※※/ /"
-    - "xform/※※/ /"    
-    - "xform/※/ /"
-  tags:
-#   - abc
-    - rvlk1
-  tips: all 
 
 
 jiayin:
