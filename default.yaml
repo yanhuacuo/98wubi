@@ -4,8 +4,9 @@
 config_version: '0.40'
 
 schema_list:
-  - schema: wubi98_ci
+  - schema: wubi98_U
   - schema: py
+  - schema: wubi98_ci
 
 switcher:
   caption: 〔方案選單〕
@@ -26,7 +27,7 @@ switcher:
   option_list_separator: '／'
 
 menu:
-  page_size: 5
+  page_size: 9
 
 punctuator:
   full_shape:

@@ -1,7 +1,10 @@
-# encoding: utf-8
-
+__build_info:
+  rime_version: 1.4.0
+  timestamps:
+    ibus_rime: 1575301445
+    ibus_rime.custom: 0
 style:
-  horizontal: true
   fullscreen: false
-  inline_preedit: true
+  horizontal: true
+  inline_preedit: false
   preedit_type: composition
