@@ -12,6 +12,8 @@ https://98wb.github.io/
 小狼毫前端的开发者「nameoverflow」，同文输入法作者「osfans」，都是大家比较熟悉的98五笔用户。另外，OpenResty 的作者章亦春，也是98五笔高手，而且非常喜爱鼠须管前端。
 98五笔小组一直致力维护98五笔资源，自 librime-1.3.2 内核对多翻译器支持的缺陷修复后，我们将资源制作的重心转移到中州韵平台上。
 
+![小狼毫98五笔版](https://raw.githubusercontent.com/98wb/win/master/%E5%B0%8F%E7%8B%BC%E6%AF%AB%E6%BC%94%E7%A4%BA.gif)
+
 ## 已无版权问题
 
 https://www.bilibili.com/video/av54083952
