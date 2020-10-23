@@ -12,7 +12,7 @@ https://98wb.github.io/
 小狼毫前端的开发者「nameoverflow」，同文输入法作者「osfans」，都是大家比较熟悉的98五笔用户。另外，OpenResty 的作者章亦春，也是98五笔高手，而且非常喜爱鼠须管前端。
 98五笔小组一直致力维护98五笔资源，自 librime-1.3.2 内核对多翻译器支持的缺陷修复后，我们将资源制作的重心转移到中州韵平台上。
 
-![小狼毫98五笔版](https://raw.githubusercontent.com/98wb/win/master/%E5%B0%8F%E7%8B%BC%E6%AF%AB%E6%BC%94%E7%A4%BA.gif)
+![小狼毫98五笔版](https://upimage.alexhchu.com/2020/10/23/494ae5fe2c4a5.gif)
 
 ## 已无版权问题
 
@@ -25,19 +25,19 @@ https://www.bilibili.com/video/av54083952
 
 *  即时码元拆分提示 
 
-![拆分提示.png](https://raw.githubusercontent.com/yanhuacuo/98wubi/master/linux/%E6%8B%86%E5%88%86%E6%8F%90%E7%A4%BA.gif)
+![拆分提示.png](https://upimage.alexhchu.com/2020/10/23/e29543dcfb856.gif)
 
 * 「z」键引导：临时拼音三重反查
 
-![三反查.png](https://raw.githubusercontent.com/omgredfog/98wubi/master/linux/11.gif)
+![三反查.png](https://upimage.alexhchu.com/2020/10/23/101546c4408e3.gif)
 
 * 「`」键引导：精准造词
 
-![精准造词.png](https://raw.githubusercontent.com/yanhuacuo/98wubi/master/linux/%E7%B2%BE%E5%87%86%E9%80%A0%E8%AF%8D.gif)
+![精准造词.png](https://upimage.alexhchu.com/2020/10/23/f809461232b9a.gif)
 
 * 「~」键引导：以形查音
 
-![以形查音.png](https://raw.githubusercontent.com/yanhuacuo/98wubi/master/linux/%E4%BB%A5%E5%BD%A2%E6%9F%A5%E9%9F%B3.gif)
+![以形查音.png](https://upimage.alexhchu.com/2020/10/19/bbc65763212e0.gif)
 
 * 「z」兼有：上次输入内容提示
 
@@ -61,9 +61,9 @@ https://www.bilibili.com/video/av54083952
 
 在安卓上面，可以实现如下效果
 
-![0](https://raw.githubusercontent.com/yanhuacuo/98wubi/master/linux/0.png)
-![1](https://raw.githubusercontent.com/yanhuacuo/98wubi/master/linux/2.png)
-![2](https://raw.githubusercontent.com/yanhuacuo/98wubi/master/linux/%E6%89%93%E5%AD%97%E7%A4%BA%E6%84%8F.png)
+![0](https://upimage.alexhchu.com/2020/10/23/88722c37320df.png)
+![1](https://upimage.alexhchu.com/2020/10/23/a4935c7152356.png)
+![2](https://upimage.alexhchu.com/2020/10/23/f0d67582cec26.png)
 
 
 ## 加入组织
