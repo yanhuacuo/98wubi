@@ -1,0 +1,8 @@
+patch:
+  app_options/chrome.exe: {ascii_mode: false}
+  app_options/cmd.exe: {ascii_mode: false}
+  app_options/conhost.exe: {ascii_mode: false}
+  app_options/test1.exe: {ascii_mode: true}
+  app_options/test2.exe: {ascii_mode: true}
+  app_options/test3.exe: {ascii_mode: true}
+  app_options/QQ.exe: {ascii_mode: true}

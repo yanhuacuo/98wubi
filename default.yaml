@@ -1,19 +1,20 @@
 # Rime default settings
 # encoding: utf-8
 
-config_version: '0.40'
+config_version: '0.41'
 
 schema_list:
-  - schema: wubi98_U
-  - schema: py
   - schema: wubi98_ci
+  - schema: wubi98_dz
+  - schema: wubi98_U
+  - schema: wb_spelling
+
 
 switcher:
   caption: 〔方案選單〕
   hotkeys:
     - Control+grave
     - Control+Shift+grave
-    - F4
   save_options:
     - full_shape
     - ascii_punct

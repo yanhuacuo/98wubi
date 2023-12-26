@@ -1,47 +1,70 @@
 # Weasel settings
 # encoding: utf-8
 
-config_version: "0.22"
-
-app_options:
-  cmd.exe:
-    ascii_mode: true
-  conhost.exe:
-    ascii_mode: true
+config_version: "0.23"
 
 style:
-  color_scheme: ink
-  font_face: 98WB-1
-  font_point: 18
-  horizontal: false
-  fullscreen: false
-  inline_preedit: false
-  preedit_type: composition
+  antialias_mode: cleartype
+  ascii_tip_follow_cursor: true
+  color_scheme: "amber-7"
+  comment_font_face: "98WB-0"
+  comment_font_point: 18
   display_tray_icon: false
+  font_face: "98WB-0"
+  font_point: 18
+  fullscreen: false
+  horizontal: true
+  inline_preedit: true
+  label_font_face: "98WB-0"
+  label_font_point: 18
   label_format: "%s."
+  mouse_hover_ms: 0
   layout:
-    min_width: 10
-    min_height: 0
+    align_type: center
+    border: 2
     border_width: 3
+    candidate_spacing: 20
+    corner_radius: 16
+    hilite_padding: 5
+    hilite_padding_x: 5
+    hilite_padding_y: 5
+    hilite_spacing: 20
     margin_x: 12
     margin_y: 12
-    spacing: 10
-    candidate_spacing: 5
-    hilite_spacing: 4
-    hilite_padding: 2
-    round_corner: 4
-
+    max_height: 2800
+    max_width: 2800
+    min_height: 0
+    min_width: 160
+    round_corner: 10
+    shadow_offset_x: "-14"
+    shadow_offset_y: 14
+    shadow_radius: 6
+    spacing: 20
+    type: vertical
+  mark_text: " "
+  preedit_type: composition
+  vertical_auto_reverse: false
+  vertical_text: true
+  vertical_text_left_to_right: true
+  vertical_text_with_wrap: true
+  
 preset_color_schemes:
   aqua:
     name: 碧水／Aqua
     author: 佛振 <chen.sst@gmail.com>
-    text_color: 0x000000
-    back_color: 0xeceeee
-    border_color: 0xe0e0e0
-    hilited_text_color: 0x000000
-    hilited_back_color: 0xd4d4d4
-    hilited_candidate_text_color: 0xffffff
-    hilited_candidate_back_color: 0xfa3a0a
+    text_color: 0x000000                          #默认文字颜色
+    back_color: 0xeceeee                          #候选窗背景色
+    shadow_color: 0x00000000                      #候选窗阴影色，默认全透明（无阴影）
+    border_color: 0xe0e0e0                        #候选窗边框颜色
+    hilited_text_color: 0x000000                  #编码文字颜色
+    hilited_back_color: 0xd4d4d4                  #编码背景颜色
+    hilited_shadow_color: 0x00000000              #编码背景块阴影颜色
+    hilited_candidate_text_color: 0xffffff        #高亮候选文字颜色
+    hilited_candidate_back_color: 0xfa3a0a        #高亮候选背景颜色
+    hilited_candidate_shadow_color: 0x00000000    #高亮候选背景块阴影颜色
+    candidate_text_color: 0x000000                #非高亮候选文字颜色
+    candidate_back_color: 0xeceeee                #非高亮候选背景颜色
+    candidate_shadow_color: 0x00000000            #非高亮候选背景块阴影颜色
 
   azure:
     name: 青天／Azure
@@ -75,19 +98,225 @@ preset_color_schemes:
     border_color: 0x000000
     hilited_text_color: 0x000000
     hilited_back_color: 0xdddddd
+    hilited_shadow_color: 0xab000000
     hilited_candidate_text_color: 0xffffff
     hilited_candidate_back_color: 0x000000
+    shadow_color: 0x42000000
+    hilited_candidate_shadow_color: 0xab000000
 
   lost_temple:
     name: 孤寺／Lost Temple
     author: 佛振 <chen.sst@gmail.com>, based on ir_black
     text_color: 0xe8f3f6
-    back_color: 0x444444
-    border_color: 0x444444
     hilited_text_color: 0x82e6ca
     hilited_back_color: 0x222222
     hilited_candidate_text_color: 0x000000
     hilited_candidate_back_color: 0x82e6ca
+    back_color: 0x444444
+    border_color: 0x00444444
+    candidate_back_color: 0x00444444
+    candidate_shadow_color: 0x00000000
+    hilited_candidate_back_color: 0x7f82e6ca
+    hilited_candidate_border_color: 0x82e6ca
+    hilited_candidate_shadow_color: 0xc0000000
+    hilited_label_color: 0x000000
+    hilited_mark_color: 0x444444
+    hilited_shadow_color: 0x00000000
+    shadow_color: 0x000000000
+
+  amber-1:
+    name: 琥珀-纯黄／Amber-yellow
+    author: 五笔小筑 <wubixiaozhu@126.com>
+    text_color: 0xe8f3f6 #默认文字颜色
+    back_color: 0x1589b2 #候选窗背景色
+    border_color: 0x00444444 #候选窗边框颜色
+    candidate_back_color: 0x1589b2 #非高亮候选背景颜色 
+    comment_text_color: 0x2A6E0D #opencc注解颜色
+    candidate_shadow_color: 0x00000000 #非高亮候选背景块阴影颜色
+    candidate_text_color: 0x000000 #非高亮候选文字颜色
+    label_color: 0x000000 #非高亮候选序数值颜色
+    hilited_candidate_border_color: 0x2EFFF8 #高亮候选背景块描边色
+    hilited_candidate_shadow_color: 0x00000000 #高亮候选背景块阴影颜色
+    hilited_label_color: 0x000000 #高亮候选的序数值颜色
+    hilited_mark_color: 0xDE33C1 #标记高亮的标签小竖块的颜色
+    hilited_shadow_color: 0x3B68FF #编码背景块阴影颜色
+    hilited_text_color: 0x82e6ca #编码文字颜色
+    hilited_back_color: 0x222222 #编码背景颜色
+    hilited_candidate_text_color: 0x000000 #高亮候选文字颜色
+    hilited_candidate_back_color: 0x31B7CC #高亮候选背景颜色
+    shadow_color: 0x00000000 #候选窗阴影色，默认全透明（无阴影）
+
+  amber-8:
+    author: "佛振 <chen.sst@gmail.com>"
+    back_color: 0x00ffffff
+    border_color: 0x00000000
+    candidate_back_color: 0xE4E4E4
+    candidate_shadow_color: 0xab000000
+    hilited_back_color: 0xE4E4E4
+    hilited_candidate_back_color: 0x000000
+    hilited_candidate_shadow_color: 0xab000000
+    hilited_candidate_text_color: 0xE4E4E4
+    hilited_label_color: 0xE4E4E4
+    hilited_shadow_color: 0xab000000
+    hilited_text_color: 0x000000
+    label_color: 0x000000
+    name: "墨池（透明）／trans_Ink"
+    shadow_color: 0x00000000
+    text_color: 0x000000
+
+  amber-7:
+    name: 琥珀-清新／Amber-Soft-blue
+    author: 五笔小筑 <wubixiaozhu@126.com>
+    text_color: 0xE99321
+    label_color: 0xE99321 #非高亮候选序数值颜色
+    back_color: 0xffffff
+    border_color: 0x333333
+    hilited_text_color: 0x2238dc
+    hilited_back_color: 0xffffff    
+    hilited_candidate_text_color: 0x2021FF #高亮候选文字颜色
+    hilited_candidate_border_color: 0xCFDCFD #高亮候选背景块描边色
+    hilited_candidate_back_color: 0xECF1FC #高亮候选背景颜色
+    comment_text_color: 0xE99321 #opencc注解颜色
+    hilited_label_color: 0x2021FF #高亮候选的序数值颜色
+    border_color: 0xE99321 #候选窗边框颜色
+    candidate_text_color: 0xE99321 #非高亮候选文字颜色   
+   
+   
+  amber-6:
+    name: 琥珀-柔光／Amber-Soft-light
+    author: 五笔小筑 <wubixiaozhu@126.com>
+    text_color: 0xffffff #默认文字颜色
+    back_color: 0xFC36ABDD #候选窗背景色
+    border_color: 0x00444444 #候选窗边框颜色
+    candidate_back_color: 0xFC36ABDD #非高亮候选背景颜色    
+    comment_text_color: 0xffffff #opencc注解颜色
+    candidate_shadow_color: 0x00000000 #非高亮候选背景块阴影颜色
+    candidate_text_color: 0xffffff #非高亮候选文字颜色
+    label_color: 0xffffff #非高亮候选序数值颜色
+    hilited_candidate_border_color: 0xEA23BE95 #高亮候选背景块描边色
+    hilited_candidate_shadow_color: 0xD3153BFE #高亮候选背景块阴影颜色
+    hilited_label_color: 0xffffff #高亮候选的序数值颜色
+    hilited_mark_color: 0xDE33C1 #标记高亮的标签小竖块的颜色
+    hilited_shadow_color: 0xEA0DD0D5 #编码背景块阴影颜色
+    hilited_text_color: 0x82e6ca #编码文字颜色
+    hilited_back_color: 0x27BA53 #编码背景颜色
+    hilited_candidate_text_color: 0xffffff #高亮候选文字颜色
+    hilited_candidate_back_color: 0xEA23BE95 #高亮候选背景颜色
+    shadow_color: 0xEA0DD0D5 #候选窗阴影色，默认全透明（无阴影）
+    
+  amber-5:
+    name: 琥珀-荧光叶绿／Amber-green-leaf
+    author: 五笔小筑 <wubixiaozhu@126.com>
+    text_color: 0xffffff #默认文字颜色
+    back_color: 0x00FFFFFF #候选窗背景色
+    border_color: 0x00444444 #候选窗边框颜色
+    candidate_back_color: 0xE6718D30 #非高亮候选背景颜色    
+    comment_text_color: 0xffffff #opencc注解颜色
+    candidate_shadow_color: 0xF599E99E #非高亮候选背景块阴影颜色
+    candidate_text_color: 0xffffff #非高亮候选文字颜色
+    label_color: 0xffffff #非高亮候选序数值颜色
+    hilited_candidate_border_color: 0xE6718D30 #高亮候选背景块描边色
+    hilited_candidate_shadow_color: 0xF599E99E #高亮候选背景块阴影颜色
+    hilited_label_color: 0xffffff #高亮候选的序数值颜色
+    hilited_mark_color: 0xDE33C1 #标记高亮的标签小竖块的颜色
+    hilited_shadow_color: 0xab2EFF58 #编码背景块阴影颜色
+    hilited_text_color: 0x82e6ca #编码文字颜色
+    hilited_back_color: 0x27BA53 #编码背景颜色
+    hilited_candidate_text_color: 0xffffff #高亮候选文字颜色
+    hilited_candidate_back_color: 0xE6718D30 #高亮候选背景颜色
+    shadow_color: 0xEB60DCDC #候选窗阴影色，默认全透明（无阴影）
+
+  amber-4:
+    name: 琥珀-荧光深红／Amber-dark-red
+    author: 五笔小筑 <wubixiaozhu@126.com>
+    text_color: 0xffffff #默认文字颜色
+    back_color: 0x00FFFFFF #候选窗背景色
+    border_color: 0x00444444 #候选窗边框颜色
+    candidate_back_color: 0xF348C1CA #非高亮候选背景颜色    
+    comment_text_color: 0xffffff #opencc注解颜色
+    candidate_shadow_color: 0xF37F1FDE #非高亮候选背景块阴影颜色
+    candidate_text_color: 0xffffff #非高亮候选文字颜色
+    label_color: 0xffffff #非高亮候选序数值颜色
+    hilited_candidate_border_color: 0xF348C1CA #高亮候选背景块描边色
+    hilited_candidate_shadow_color: 0xF37F1FDE #高亮候选背景块阴影颜色
+    hilited_label_color: 0xffffff #高亮候选的序数值颜色
+    hilited_mark_color: 0xDE33C1 #标记高亮的标签小竖块的颜色
+    hilited_shadow_color: 0xab2EFF58 #编码背景块阴影颜色
+    hilited_text_color: 0x82e6ca #编码文字颜色
+    hilited_back_color: 0x27BA53 #编码背景颜色
+    hilited_candidate_text_color: 0xffffff #高亮候选文字颜色
+    hilited_candidate_back_color: 0xF348C1CA #高亮候选背景颜色
+    shadow_color: 0xEB60DCDC #候选窗阴影色，默认全透明（无阴影）
+
+
+
+  amber-3:
+    name: 琥珀-荧光水绿／Amber-light-green
+    author: 五笔小筑 <wubixiaozhu@126.com>
+    text_color: 0xffffff #默认文字颜色
+    back_color: 0x00FFFFFF #候选窗背景色
+    border_color: 0x00444444 #候选窗边框颜色
+    candidate_back_color: 0xC552D457 #非高亮候选背景颜色    
+    comment_text_color: 0xffffff #opencc注解颜色
+    candidate_shadow_color: 0xF0A1F0ED #非高亮候选背景块阴影颜色
+    candidate_text_color: 0xffffff #非高亮候选文字颜色
+    label_color: 0xffffff #非高亮候选序数值颜色
+    hilited_candidate_border_color: 0xC552D457 #高亮候选背景块描边色
+    hilited_candidate_shadow_color: 0xF0A1F0ED #高亮候选背景块阴影颜色
+    hilited_label_color: 0xffffff #高亮候选的序数值颜色
+    hilited_mark_color: 0xDE33C1 #标记高亮的标签小竖块的颜色
+    hilited_shadow_color: 0xab2EFF58 #编码背景块阴影颜色
+    hilited_text_color: 0x82e6ca #编码文字颜色
+    hilited_back_color: 0x27BA53 #编码背景颜色
+    hilited_candidate_text_color: 0xffffff #高亮候选文字颜色
+    hilited_candidate_back_color: 0xC552D457 #高亮候选背景颜色
+    shadow_color: 0xB329E63C #候选窗阴影色，默认全透明（无阴影）
+
+
+  amber-2:
+    name: 琥珀-新绿／Amber-green
+    author: 五笔小筑 <wubixiaozhu@126.com>
+    text_color: 0xffffff #默认文字颜色
+    back_color: 0x72D4BD #候选窗背景色
+    border_color: 0x00444444 #候选窗边框颜色
+    candidate_back_color: 0x72D4BD #非高亮候选背景颜色    
+    comment_text_color: 0xffffff #opencc注解颜色
+    candidate_shadow_color: 0x00000000 #非高亮候选背景块阴影颜色
+    candidate_text_color: 0xffffff #非高亮候选文字颜色
+    label_color: 0xffffff #非高亮候选序数值颜色
+    hilited_candidate_border_color: 0xc227BA53 #高亮候选背景块描边色
+    hilited_candidate_shadow_color: 0xabD41789 #高亮候选背景块阴影颜色
+    hilited_label_color: 0xffffff #高亮候选的序数值颜色
+    hilited_mark_color: 0xDE33C1 #标记高亮的标签小竖块的颜色
+    hilited_shadow_color: 0xab2EFF58 #编码背景块阴影颜色
+    hilited_text_color: 0x82e6ca #编码文字颜色
+    hilited_back_color: 0x27BA53 #编码背景颜色
+    hilited_candidate_text_color: 0xffffff #高亮候选文字颜色
+    hilited_candidate_back_color: 0xc227BA53 #高亮候选背景颜色
+    shadow_color: 0xab2EFF58 #候选窗阴影色，默认全透明（无阴影）
+
+  amber:
+    name: 琥珀／Amber
+    author: 五笔小筑 <wubixiaozhu@126.com>
+    text_color: 0xe8f3f6 #默认文字颜色
+    back_color: 0x1589b2 #候选窗背景色
+    border_color: 0x00444444 #候选窗边框颜色
+    candidate_back_color: 0x1589b2 #非高亮候选背景颜色 
+    comment_text_color: 0x2A6E0D #opencc注解颜色
+    candidate_shadow_color: 0x00000000 #非高亮候选背景块阴影颜色
+    candidate_text_color: 0x000000 #非高亮候选文字颜色
+    label_color: 0x000000 #非高亮候选序数值颜色
+    hilited_candidate_border_color: 0x2EFFF8 #高亮候选背景块描边色
+    hilited_candidate_shadow_color: 0x00000000 #高亮候选背景块阴影颜色
+    hilited_label_color: 0x000000 #高亮候选的序数值颜色
+    hilited_mark_color: 0xDE33C1 #标记高亮的标签小竖块的颜色
+    hilited_shadow_color: 0x3B68FF #编码背景块阴影颜色
+    hilited_text_color: 0x82e6ca #编码文字颜色
+    hilited_back_color: 0x222222 #编码背景颜色
+    hilited_candidate_text_color: 0x000000 #高亮候选文字颜色
+    hilited_candidate_back_color: 0x31B7CC #高亮候选背景颜色
+    shadow_color: 0x3B68FF #候选窗阴影色，默认全透明（无阴影）
+
 
   dark_temple:
     name: 暗堂／Dark Temple
@@ -411,13 +640,18 @@ preset_color_schemes:
     name: "清風／Cool Breeze"
     author: "skoj <skoj@qq.com>"
     text_color: 0x0000FF
-    back_color: 0xFFFBFB
+    back_color: 0xF7F7F7
+    candidate_back_color: 0xF7F7F7
     border_color: 0xFFAAAA
-    hilited_text_color: 0x0000CE
-    hilited_back_color: 0xFFFBFB
     candidate_text_color: 0x009100
+    hilited_label_color: 0x6F003A #高亮候选的序数值颜色
+    hilited_text_color: 0x0000CE
     hilited_candidate_text_color: 0x6F003A
     hilited_candidate_back_color: 0xFFD6AC
+    hilited_candidate_border_color: 0xFFD6AC #高亮候选背景块描边色
+    hilited_candidate_shadow_color: 0xabFFAAAA #高亮候选背景块阴影颜色
+    shadow_color: 0x42FFAAAA #候选窗阴影色，默认全透明（无阴影）
+    label_color: 0x009100 #非高亮候选序数值颜色
 
   google_plus:
     name: "Google+"
@@ -538,3 +772,668 @@ preset_color_schemes:
     hilited_candidate_back_color: 0xd8bf00
     comment_text_color: 0x808080
     hilited_comment_text_color: 0x444444
+    
+  win11dark:
+    name: win11黑／win11dark
+    border_color:  0xc202020
+    back_color: 0x303030
+    hilited_back_color: 0x20202020
+    hilited_candidate_back_color: 0x7fd07c3a
+    hilited_candidate_border_color: 0xd07c3a
+    candidate_back_color: 0x10d07c3a  
+    hilited_text_color: 0xf9f9f9
+    hilited_label_color: 0xf9f9f9
+    hilited_candidate_text_color:  0xf9f9f9
+    hilited_comment_text_color:   0xf9f9f9
+    hilited_mark_color: 0xff0000  
+    text_color: 0xc9c9c9
+    label_color: 0xc9c9c9
+    candidate_text_color: 0xc9c9c9
+    comment_text_color: 0xc9c9c9
+    shadow_color: 0x60000000
+    
+  win10gray:
+    name: win10灰／win10gray
+    candidate_text_color: 0x000000
+    comment_text_color: 0x666666
+    text_color: 0x000000
+    back_color: 0x4ff4f4f4
+    border_color:  0xcccccc
+    hilited_text_color: 0x000000
+    hilited_back_color: 0xffffff
+    hilited_candidate_text_color:  0x000000
+    hilited_candidate_back_color: 0xcccccc
+    hilited_comment_text_color:   0x555555
+    hilited_label_color: 0x444444
+    hilited_mark_color: 0xd77800
+    label_color: 0x888888
+    shadow_color: 0x20000000
+    
+  win10black:
+    name: win10黑／win10black
+    candidate_text_color: 0xffffff
+    comment_text_color: 0x666666
+    text_color: 0xffffff
+    back_color: 0x000000
+    border_color:  0x347440
+    hilited_text_color: 0xffffff
+    hilited_back_color: 0x347440
+    hilited_candidate_text_color:  0xffffff
+    hilited_candidate_back_color: 0x347440
+    hilited_comment_text_color:   0xa9a9a9
+    hilited_mark_color: 0x0dd3f5  
+    hilited_label_color: 0xa9a9a9
+    label_color: 0xa9a9a9
+    shadow_color: 0x00000000
+    
+  winbook:
+    name: 古书／oldbook
+    border_color:  0xc202020
+    back_color: 0xdcf5f5
+    hilited_back_color: 0x00202020
+    #hilited_shadow_color: 0x50202020
+    hilited_candidate_back_color: 0x01d07c3a
+    hilited_candidate_border_color: 0xd07c3a  
+    hilited_text_color: 0x202020
+    hilited_label_color: 0x202020
+    hilited_candidate_text_color:  0x202020
+    hilited_comment_text_color:   0x202020
+    hilited_mark_color: 0xff0000  
+    text_color: 0x404040
+    label_color: 0x404040
+    candidate_text_color: 0x404040
+    candidate_back_color: 0x01d07c3a
+    comment_text_color: 0x404040
+    candidate_border_color: 0x20d07c3a
+    shadow_color: 0x60000000
+    
+  songhe:
+    name: 松鹤／songhe
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0xB2CECC 
+    back_color: 0x4E7160
+    border_color: 0x38667D
+    candidate_back_color: 0x4E7160 
+    hilited_candidate_border_color: 0x434C50
+    comment_text_color: 0xB2CECC
+    hilited_comment_text_color: 0x263030
+    label_color: 0xB2CECC
+    hilited_label_color: 0x072FA9
+    hilited_mark_color: 0xffffff
+    hilited_text_color: 0xB2CECC
+    hilited_back_color: 0x26332C
+    hilited_candidate_text_color: 0x263030
+    hilited_candidate_back_color: 0xC0D9D7
+    shadow_color: 0x6b68635F
+    hilited_shadow_color: 0x6b000000  
+    # hilited_candidate_border_color: 0x426D96
+    hilited_candidate_shadow_color: 0x6b000000
+    
+    
+  santi:
+    name: 三体-黑暗森林／santi
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0xBC8000 
+    back_color: 0x251800
+    border_color: 0xBC8000
+    candidate_back_color: 0x251800 
+    comment_text_color: 0xBC8000
+    hilited_comment_text_color: 0xC6F413
+    label_color: 0xBC8000
+    hilited_label_color: 0xFFFFFF
+    hilited_mark_color: 0xffffff
+    hilited_text_color: 0x251800
+    hilited_back_color: 0xCA9400
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_candidate_back_color: 0xBC8000
+    shadow_color: 0xab000000
+    hilited_shadow_color: 0xab000000  
+    # hilited_candidate_border_color: 0x426D96
+    hilited_candidate_shadow_color: 0xab000000
+
+  xuemei:
+    # 砌下落梅如雪乱，拂了一身还满。
+    name: 雪梅／xuemei
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x747676 
+    back_color: 0xEFEFEF
+    border_color: 0x1F1A12
+    candidate_back_color: 0xEFEFEF 
+    comment_text_color: 0x747676
+    hilited_comment_text_color: 0x2A251C
+    label_color: 0x747676
+    hilited_label_color: 0x2A251C
+    hilited_mark_color: 0xEFEFEF
+    hilited_text_color: 0xEFEFEF
+    hilited_back_color: 0x2A251C
+    hilited_candidate_text_color: 0x2A251C
+    hilited_candidate_back_color: 0x030DC6
+    shadow_color: 0xab000000
+    hilited_shadow_color: 0xab000000  
+    # hilited_candidate_border_color: 0x426D96
+    hilited_candidate_shadow_color: 0xab000000
+
+
+  shanyue:
+    name: 山月／shanyue
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0xE4E3E6
+    back_color: 0xBF847D
+    border_color: 0xE4E3E6
+    candidate_back_color: 0xBF847D 
+    comment_text_color: 0xE4E3E6
+    hilited_comment_text_color: 0x1D689E
+    label_color: 0xE4E3E6
+    hilited_label_color: 0x1D689E
+    hilited_mark_color: 0xffffff
+    hilited_text_color: 0x286282
+    hilited_back_color: 0x65B6E3
+    hilited_candidate_text_color: 0x1D689E
+    hilited_candidate_back_color: 0xB9F0F6
+    shadow_color: 0x8b000000
+    hilited_shadow_color: 0x8b000000  
+    # hilited_candidate_border_color: 0x426D96
+    hilited_candidate_shadow_color: 0x8b000000
+
+  cookie:
+    name: 饼干／cookie
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x426D96
+    back_color: 0x99D2FE
+    border_color: 0x000000
+    candidate_back_color: 0x99D2FE 
+    comment_text_color: 0x426D96
+    hilited_comment_text_color: 0x000000
+    label_color: 0x426D96
+    hilited_label_color: 0x000000
+    hilited_mark_color: 0xffffff
+    hilited_text_color: 0x000000
+    hilited_back_color: 0x5B99D8
+    hilited_candidate_text_color: 0x000000
+    hilited_candidate_back_color: 0x5B99D8
+    shadow_color: 0x6b68635F
+    hilited_shadow_color: 0x6b000000  
+    hilited_candidate_border_color: 0x426D96
+    hilited_candidate_shadow_color: 0x6b000000
+
+  spaceman:
+    name: 宇航员／spaceman
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0xffffff
+    back_color: 0xCC8359
+    border_color: 0x8E4D26
+    candidate_back_color: 0xCC8359 
+    comment_text_color: 0xffffff
+    hilited_comment_text_color: 0x01DBF8
+    label_color: 0xffffff
+    hilited_label_color: 0x01DBF8
+    hilited_mark_color: 0xffffff
+    hilited_text_color: 0x37C1EF
+    hilited_back_color: 0x8E4D26
+    hilited_candidate_text_color: 0x01DBF8
+    hilited_candidate_back_color: 0x8E4D26
+    shadow_color: 0x6b68635F
+    hilited_shadow_color: 0x6b000000  
+    hilited_candidate_border_color: 0xFBFDFF
+    hilited_candidate_shadow_color: 0x6b000000
+
+
+  yang_girl:
+    name: 少女／yang_girl
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0xDFAE1A
+    back_color: 0xC7BFFB
+    border_color: 0xC7BFFB
+    candidate_back_color: 0xC7BFFB 
+    comment_text_color: 0xDFAE1A
+    hilited_comment_text_color: 0x9155FF
+    label_color: 0xDFAE1A
+    hilited_label_color: 0x9155FF
+    hilited_mark_color: 0xffffff
+    hilited_text_color: 0xDFAE1A
+    hilited_back_color: 0xB1A6FD
+    hilited_candidate_text_color: 0x9155FF
+    hilited_candidate_back_color: 0xF2F1FA
+    shadow_color: 0x6b68635F
+    hilited_shadow_color: 0x6b000000  
+    # hilited_candidate_border_color: 0xEBE7E7
+    hilited_candidate_shadow_color: 0x6b000000
+    
+  bamboo:
+    # 霜干寒如玉，风枝响似琴。
+    name: 咏竹／bamboo
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x578664
+    back_color: 0xCFECF1
+    border_color: 0xBBD9C1
+    candidate_back_color: 0xCFECF1 
+    comment_text_color: 0x578664
+    hilited_comment_text_color: 0x253827
+    label_color: 0x578664
+    hilited_label_color: 0x253827
+    hilited_mark_color: 0xffffff
+    hilited_text_color: 0x253827
+    hilited_back_color: 0x6F9A80
+    hilited_candidate_text_color: 0x253827
+    hilited_candidate_back_color: 0x6F9A80
+    shadow_color: 0x6b68635F
+    hilited_shadow_color: 0x6b000000  
+    # hilited_candidate_border_color: 0xEBE7E7
+    hilited_candidate_shadow_color: 0x6b000000
+
+  chunyan:
+    name: 春燕／chunyan
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x467F3F
+    back_color: 0xFAFAFA
+    border_color: 0x87B989
+    candidate_back_color: 0xFAFAFA 
+    comment_text_color: 0x467F3F
+    hilited_comment_text_color: 0x323CC7
+    label_color: 0x467F3F
+    hilited_label_color: 0x323CC7
+    hilited_mark_color: 0xffffff
+    hilited_text_color: 0x185FF3
+    hilited_back_color: 0x7D502B
+    hilited_candidate_text_color: 0x323CC7
+    hilited_candidate_back_color: 0x96BA8C
+    shadow_color: 0x8b000000
+    hilited_shadow_color: 0x8b000000  
+    # hilited_candidate_border_color: 0x426D96
+    hilited_candidate_shadow_color: 0x8b000000
+
+  98wb-pink:
+    name: 一品红／98wb-pink
+    author: 五笔小筑 <wubixiaozhu@126.com>
+    text_color: 0xffffff #默认文字颜色
+    back_color: 0xabE8CB3C #候选窗背景色
+    border_color: 0xE8CB3C #候选窗边框颜色
+    candidate_back_color: 0x00000000 #非高亮候选背景颜色    
+    comment_text_color: 0xffffff #opencc注解颜色
+    label_color: 0xffffff #非高亮候选序数值颜色
+    candidate_shadow_color: 0x00000000 #非高亮候选背景块阴影颜色
+    candidate_text_color: 0xffffff #非高亮候选文字颜色
+    hilited_candidate_border_color: 0xE82EE8 #高亮候选背景块描边色
+    hilited_candidate_shadow_color: 0xab13E8E8 #高亮候选背景块阴影颜色
+    hilited_label_color: 0xffffff #高亮候选的序数值颜色
+    hilited_mark_color: 0xDE33C1 #标记高亮的标签小竖块的颜色
+    hilited_shadow_color: 0xab187BDD #编码背景块阴影颜色
+    hilited_text_color: 0x82e6ca #编码文字颜色
+    hilited_back_color: 0x42BA2CDD #编码背景颜色
+    hilited_candidate_text_color: 0xffffff #高亮候选文字颜色
+    hilited_candidate_back_color: 0xa1E82EE8 #高亮候选背景颜色
+    shadow_color: 0xab13E868 #候选窗阴影色，默认全透明（无阴影）
+    
+  cactus:
+    name: 仙人掌／cactus
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x508027
+    back_color: 0xD5E7CA
+    border_color: 0x508027
+    candidate_back_color: 0xD5E7CA
+    comment_text_color: 0x508027
+    hilited_comment_text_color: 0x925DCF
+    label_color: 0x508027
+    hilited_label_color: 0x925DCF
+    hilited_mark_color: 0x508027
+    hilited_text_color: 0x508027
+    hilited_back_color: 0xB2CD95
+    hilited_candidate_text_color: 0x925DCF
+    hilited_candidate_back_color: 0xB2CD95
+    shadow_color: 0x6b000000
+    hilited_shadow_color: 0x6b000000  
+    # hilited_candidate_border_color: 0x141620
+    hilited_candidate_shadow_color: 0x6b000000
+    
+  nian:
+    name: 年味／nian
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x040109
+    back_color: 0x2222CA
+    border_color: 0x1C1AB8
+    candidate_back_color: 0x2222CA
+    comment_text_color: 0x040109
+    hilited_comment_text_color: 0x7AEEFA
+    label_color: 0x040109
+    hilited_label_color: 0x7AEEFA
+    hilited_mark_color: 0xE0F9FF
+    hilited_text_color: 0x040109
+    hilited_back_color: 0x2222CA
+    hilited_candidate_text_color: 0x7AEEFA
+    hilited_candidate_back_color: 0x1A15A9
+    shadow_color: 0x6b000000
+    hilited_shadow_color: 0x6b000000  
+    # hilited_candidate_border_color: 0x141620
+    hilited_candidate_shadow_color: 0x6b000000
+    
+  fun:
+    name: 趣／fun
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x744902
+    back_color: 0xCFA952
+    border_color: 0x141620
+    candidate_back_color: 0xCFA952
+    comment_text_color: 0x744902
+    hilited_comment_text_color: 0xFBF9F7
+    label_color: 0x744902
+    hilited_label_color: 0xFBF9F7
+    hilited_mark_color: 0xE0F9FF
+    hilited_text_color: 0xE7EFF3
+    hilited_back_color: 0x5442DF
+    hilited_candidate_text_color: 0xFBF9F7
+    hilited_candidate_back_color: 0x744902
+    shadow_color: 0x6b000000
+    hilited_shadow_color: 0x6b000000  
+    # hilited_candidate_border_color: 0x141620
+    hilited_candidate_shadow_color: 0x6b000000
+    
+
+  avocado:
+    name: 牛油果／avocado
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x606C8C
+    back_color: 0xA3DEC9
+    border_color: 0x013758
+    candidate_back_color: 0xA3DEC9
+    comment_text_color: 0x606C8C
+    hilited_comment_text_color: 0x054173
+    label_color: 0x606C8C
+    hilited_label_color: 0x054173
+    hilited_mark_color: 0xE0F9FF 
+    hilited_text_color: 0x054173
+    hilited_back_color: 0x72F2FF
+    hilited_candidate_text_color: 0x054173
+    hilited_candidate_back_color: 0x72F2FF
+    shadow_color: 0x6b68635F
+    hilited_shadow_color: 0x6b000000  
+    hilited_candidate_border_color: 0x3EEC95
+    hilited_candidate_shadow_color: 0x6b000000
+    
+  lemon:
+    name: 柠檬／lemon
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x3D9C45
+    back_color: 0x9EFDFB
+    border_color: 0x3D9C45
+    candidate_back_color: 0x9EFDFB  
+    comment_text_color: 0x3D9C45
+    hilited_comment_text_color: 0x9EFDFB
+    label_color: 0x3D9C45
+    hilited_label_color: 0x9EFDFB
+    hilited_mark_color: 0xE0F9FF
+    hilited_text_color: 0x3D9C45
+    hilited_back_color: 0x9EFDFB
+    hilited_candidate_text_color: 0x9EFDFB
+    hilited_candidate_back_color: 0x25B779
+    shadow_color: 0x6b68635F
+    hilited_shadow_color: 0x6b000000  
+    hilited_candidate_border_color: 0xFDF8FD
+    hilited_candidate_shadow_color: 0x6b000000
+    
+
+  summer:
+    name: 夏日清凉／summer
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x518465
+    back_color: 0xAAD5BB
+    border_color: 0x1B904B
+    candidate_back_color: 0xAAD5BB 
+    comment_text_color: 0x518465
+    hilited_comment_text_color: 0x007814
+    label_color: 0x518465
+    hilited_label_color: 0x007814
+    hilited_mark_color: 0xE0F9FF
+    hilited_text_color: 0x070807
+    hilited_back_color: 0x16C08B
+    hilited_candidate_text_color: 0x007814
+    hilited_candidate_back_color: 0x58F6EA
+    shadow_color: 0x6b68635F
+    hilited_shadow_color: 0x6b000000  
+    # hilited_candidate_border_color: 0xFDF8FD
+    hilited_candidate_shadow_color: 0x6b000000
+    
+
+  PUBG:
+    name: 绝地求生／PUBG
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x00B8E5
+    back_color: 0x101010
+    border_color: 0x0BBDF1
+    candidate_back_color: 0x101010 
+    comment_text_color: 0x00B8E5
+    hilited_comment_text_color: 0xE0F9FF
+    label_color: 0x00B8E5
+    hilited_label_color: 0xE0F9FF
+    hilited_mark_color: 0xE0F9FF
+    hilited_text_color: 0x00B8E5
+    hilited_back_color: 0x101010
+    hilited_candidate_text_color: 0xE0F9FF
+    hilited_candidate_back_color: 0x025BAD
+    shadow_color: 0x6b68635F
+    hilited_shadow_color: 0x6b000000  
+    hilited_candidate_border_color: 0x0BBDF1
+    hilited_candidate_shadow_color: 0x6b000000
+    
+  cement:
+    name: 水泥／cement
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x080807
+    back_color: 0xA99D97
+    border_color: 0x060607
+    candidate_back_color: 0xA99D97 
+    comment_text_color: 0x080807
+    hilited_comment_text_color: 0x080807
+    label_color: 0x080807
+    hilited_label_color: 0x080807
+    hilited_mark_color: 0xffffff
+    hilited_text_color: 0x060607
+    hilited_back_color: 0xA99D97
+    hilited_candidate_text_color: 0x080807
+    hilited_candidate_back_color: 0xA99D97
+    shadow_color: 0x6b68635F
+    hilited_shadow_color: 0x6b000000  
+    hilited_candidate_border_color: 0xEBE7E7
+    hilited_candidate_shadow_color: 0x6b000000
+    
+
+
+  trans_sport:
+    name: 轻动／trans_sport
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0xffffff #默认文字颜色
+    back_color: 0xbb975824 #候选窗背景色
+    border_color: 0x1E77F2 #候选窗边框颜色 
+    comment_text_color: 0xffffff #opencc注解颜色
+    hilited_comment_text_color: 0x1E77F2
+    label_color: 0xffffff #非高亮候选序值颜色
+    candidate_text_color: 0xffffff #非高亮候选文字颜色
+    hilited_label_color: 0x1E77F2 #高亮候选的序数值颜色
+    hilited_mark_color: 0xDE33C1 #标记高亮的标签小竖块的颜色
+    hilited_text_color: 0x1E77F2 #编码文字颜色
+    hilited_back_color: 0x5b975824 #编码背景颜色
+    hilited_candidate_text_color: 0x1E77F2 #高亮候选文字颜色
+    hilited_candidate_back_color: 0x5b975824 #高亮候选背景颜色
+    shadow_color: 0x8b6BA3C9 #候选窗阴影色，默认全透明（无阴影）
+    
+
+  trans_cool:
+    name: 轻酷／trans_whisper
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0xA5BC6E
+    back_color: 0xbb4F4339
+    border_color: 0xFACB72
+    candidate_back_color: 0x00000000
+    comment_text_color: 0xA5BC6E
+    hilited_comment_text_color: 0xAB93ED
+    label_color: 0xA5BC6E
+    hilited_label_color: 0xAB93ED
+    hilited_mark_color: 0xE0F9FF
+    hilited_text_color: 0x95F7FA
+    hilited_back_color: 0x00000000
+    hilited_candidate_text_color: 0xAB93ED
+    hilited_candidate_back_color: 0x00000000
+    
+
+  trans_whisper:
+    name: 轻语／trans_whisper
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0xDD8A03
+    back_color: 0x4bC9E1F0
+    border_color: 0x363332
+    candidate_back_color: 0x00000000
+    comment_text_color: 0xDD8A03
+    hilited_comment_text_color: 0x0A38FD
+    label_color: 0xDD8A03
+    hilited_label_color: 0x0A38FD
+    hilited_mark_color: 0xE0F9FF
+    hilited_text_color: 0xDD8A03
+    hilited_back_color: 0x00000000
+    hilited_candidate_text_color: 0x0A38FD
+    hilited_candidate_back_color: 0x00000000
+    shadow_color: 0x4bA0A0A0
+    
+
+  trans_love:
+    name: 轻恋／trans_love
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x79C624
+    back_color: 0x00FFFFFF
+    border_color: 0xA3A3A3
+    candidate_back_color: 0x00000000
+    comment_text_color: 0x79C624
+    hilited_comment_text_color: 0x5C90FF
+    label_color: 0x79C624
+    hilited_label_color: 0x5C90FF
+    hilited_mark_color: 0xE0F9FF
+    hilited_text_color: 0x79C624
+    hilited_back_color: 0x00000000
+    hilited_candidate_text_color: 0x5C90FF
+    hilited_candidate_back_color: 0x00000000
+    
+  sakura:
+    name: 樱花／sakura
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x7264D3
+    back_color: 0xEBE1F6
+    border_color: 0x8C7CDB
+    candidate_back_color: 0xEBE1F6
+    comment_text_color: 0x7264D3
+    hilited_comment_text_color: 0x2B2270
+    label_color: 0x7264D3
+    hilited_label_color: 0x2B2270
+    hilited_mark_color: 0x2B2270
+    hilited_text_color: 0x2B2270
+    hilited_back_color: 0xC4BEF0
+    hilited_candidate_text_color: 0x2B2270
+    hilited_candidate_back_color: 0xC4BEF0
+    shadow_color: 0x6b000000
+    hilited_shadow_color: 0x6b000000  
+    # hilited_candidate_border_color: 0x141620
+    hilited_candidate_shadow_color: 0x6b000000
+
+  sunflower:
+    name: 向日葵／sunflower
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x32567F
+    back_color: 0x6CD7FD
+    border_color: 0x3C5181
+    candidate_back_color: 0x6CD7FD
+    comment_text_color: 0x32567F
+    hilited_comment_text_color: 0x151094
+    label_color: 0x32567F
+    hilited_label_color: 0x151094
+    hilited_mark_color: 0x32567F
+    hilited_text_color: 0x32567F
+    hilited_back_color: 0x6CD7FD
+    hilited_candidate_text_color: 0x151094
+    hilited_candidate_back_color: 0x65C8F9
+    shadow_color: 0x6b000000
+    hilited_shadow_color: 0x6b000000  
+    hilited_candidate_border_color: 0x6DFDFE
+    hilited_candidate_shadow_color: 0x6b000000
+
+ 
+  zhihu_white:
+    name: 知乎白／zhihu_white
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x573130
+    back_color: 0xFCFEFC
+    border_color: 0x000000
+    candidate_back_color: 0xFCFEFC
+    comment_text_color: 0x573130
+    hilited_comment_text_color: 0x000000
+    label_color: 0x573130
+    hilited_label_color: 0x000000
+    hilited_mark_color: 0x3340D6
+    hilited_text_color: 0x3340D6
+    hilited_back_color: 0xabD97700
+    hilited_candidate_text_color: 0x000000
+    hilited_candidate_back_color: 0xabD97700
+    shadow_color: 0x6b000000
+    hilited_shadow_color: 0x6b000000  
+    # hilited_candidate_border_color: 0xBEF6FF
+    hilited_candidate_shadow_color: 0x6b000000
+
+
+  zhihu_blue:
+    name: 知乎蓝／zhihu_blue
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x555555
+    back_color: 0xFFBF67
+    border_color: 0x000000
+    candidate_back_color: 0xFFBF67
+    comment_text_color: 0x555555
+    hilited_comment_text_color: 0x000000
+    label_color: 0x555555
+    hilited_label_color: 0x000000
+    hilited_mark_color: 0xFFBF67
+    hilited_text_color: 0x555555
+    hilited_back_color: 0xabFFFFFF
+    hilited_candidate_text_color: 0x000000
+    hilited_candidate_back_color: 0xabFFFFFF
+    shadow_color: 0x6b000000
+    hilited_shadow_color: 0x6b000000
+    # hilited_candidate_border_color: 0xBEF6FF
+    hilited_candidate_shadow_color: 0x6b000000
+
+  morning:
+    name: 清晨／morning
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x989898
+    back_color: 0xF7F7F7
+    border_color: 0x82A167
+    candidate_back_color: 0xF7F7F7
+    comment_text_color: 0x989898
+    hilited_comment_text_color: 0x4D4D4D
+    label_color: 0x989898
+    hilited_label_color: 0x4D4D4D
+    hilited_mark_color: 0x9BE0CC
+    hilited_text_color: 0x4D4D4D
+    hilited_back_color: 0x9BE0CC
+    hilited_candidate_text_color: 0x4D4D4D
+    hilited_candidate_back_color: 0x809A76
+    shadow_color: 0x6b000000
+    hilited_shadow_color: 0x6b000000  
+    # hilited_candidate_border_color: 0xBEF6FF
+    hilited_candidate_shadow_color: 0x6b000000
+
+  peaceful:
+    name: 宁静致远／peaceful
+    author: 空山明月 <sqqlove123@163.com>
+    text_color: 0x4D5277
+    back_color: 0xEEF5FE
+    border_color: 0x5F689A
+    candidate_back_color: 0xEEF5FE
+    comment_text_color: 0x4D5277
+    hilited_comment_text_color: 0x2A2742
+    label_color: 0x4D5277
+    hilited_label_color: 0x2A2742
+    hilited_mark_color: 0x2A2742
+    hilited_text_color: 0x2A2742
+    hilited_back_color: 0xA1BAD7
+    hilited_candidate_text_color: 0x2A2742
+    hilited_candidate_back_color: 0xA1BAD7
+    shadow_color: 0x6b000000
+    hilited_shadow_color: 0x6b000000  
+    # hilited_candidate_border_color: 0x141620
+    hilited_candidate_shadow_color: 0x6b000000

@@ -1,21 +1,48 @@
 patch:
-# 新选单——定义为竖排
-  "style/font_face": "98WB-P0"
-  "style/font_point": 30
-  "style/horizontal": true
-  "style/fullscreen": false
+  "style/comment_font_face": "98WB-3"
+  "style/layout/type": vertical
+  "style/layout/hilite_spacing": 10
+  "schema/half_icon": "icons/half.ico" 
   "style/inline_preedit": true
-  "style/preedit_type": composition
+  "style/vertical_text_left_to_right": true
   "style/display_tray_icon": false
-  "style/label_format": "%s."
-  "style/layout/min_width": 0
-  "style/layout/min_height": 0
-  "style/layout/border_width": 0
-  "style/layout/margin_x": 12
-  "style/layout/margin_y": 12
+  "style/mark_text": " "
+  "style/layout/shadow_offset_y": 8
+  "style/layout/hilite_padding": 5
+  "style/layout/shadow_offset_x": "-8"
+  "style/layout/margin_x": 10
   "style/layout/spacing": 10
-  "style/layout/candidate_spacing": 22
-  "style/layout/hilite_spacing": 4
-  "style/layout/hilite_padding": 12
-  "style/layout/round_corner": 0
-
+  "style/label_font_point": 16
+  "style/fullscreen": false
+  "style/layout/shadow_radius": 8
+  "style/mouse_hover_ms": 0
+  "style/label_font_face": "98WB-3"
+  "style/layout/corner_radius": 16
+  "style/layout/align_type": center
+  "style/layout/hilite_padding_x": 5
+  "style/label_format": "%s."
+  "style/layout/border_width": 3
+  "style/font_face": "98WB-V,98WB-U"
+  "style/preedit_type": composition
+  "style/ascii_tip_follow_cursor": true
+  "style/color_scheme": "amber"
+  "style/vertical_text_with_wrap": false
+  "style/layout/round_corner": 16
+  "style/paging_on_scroll": false
+  "style/layout/candidate_spacing": 15
+  "style/layout/border": 2
+  "style/layout/margin_y": 10
+  "schema/icon": "icons/wubi.ico"
+  "style/vertical_auto_reverse": false
+  "schema/full_icon": "icons/full.ico" 
+  "style/layout/max_width": 2800
+  "style/layout/min_height": 0
+  "style/layout/hilite_padding_y": 5
+  "style/layout/min_width": 80
+  "style/layout/max_height": 2800
+  "style/comment_font_point": 16
+  "style/font_point": 16
+  "style/vertical_text": true
+  "schema/ascii_icon": "icons/en.ico" 
+  "style/horizontal": true
+  "style/antialias_mode": default
