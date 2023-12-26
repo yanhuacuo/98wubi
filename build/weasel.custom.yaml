@@ -1,0 +1,9 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.15.0.0
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Tue Sep 19 18:36:10 2023"
+  rime_version: 1.9.0
+patch:
+  __include: "hot_keys:/patch"
+  "style/color_scheme": amber-7
