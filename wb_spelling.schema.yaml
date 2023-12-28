@@ -4,7 +4,7 @@
 schema:
   schema_id: wb_spelling
   name: "伪方案"
-  version: "12.18"
+  version: "12.28"
   author:
     - LuaTable by wubixiaozhu
   description: |
