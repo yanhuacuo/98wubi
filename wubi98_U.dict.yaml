@@ -31975,6 +31975,7 @@ encoder:
 𧠖	hqat	268050	hqat
 眡	hqay	268049	hqay
 𰲞	hqay	268048	hqay
+𰲞	hway	268048	hway
 𫻺	hqay	268047	hqay
 見	hqb	268046	hqb
 𠑷	hqb	268045	hqb
@@ -51301,7 +51302,8 @@ encoder:
 𫷒	mhgm	248724	mhgm
 𱜺	mhgm	248723	mhgm
 𰀊	mhgn	248722	mhgn
-𠕄	mhgn	248721	mhgn
+𠕄	mghn	248721	mghn
+𠕄	mgmg	248721	mgmg
 𱜵	mhgn	248720	mhgn
 帓	mhgs	248719	mhgs
 𢅼	mhgt	248718	mhgt
@@ -51998,7 +52000,6 @@ encoder:
 册	mmgd	248027	mmgd
 𡷪	mmgd	248026	mmgd
 𮱹	mmge	248025	mmge
-𠕄	mmgg	248024	mmgg
 删	mmgj	248023	mmgj
 𣆑	mmgj	248022	mmgj
 峒	mmgk	248021	mmgk
@@ -52544,7 +52545,7 @@ encoder:
 𠕢	mqmj	247481	mqmj
 𭗃	mqmj	247480	mqmj
 翙	mqn	247479	mqng
-𲁓	mqnb	247478	mqnb
+𲁓	mqmq	247478	mqmq
 翙	mqng	247477	mqng
 𡶄	mqnn	247476	mqnn
 𧵢	mqnn	247475	mqnn
@@ -109283,7 +109284,6 @@ encoder:
 診	ywet	190742	ywet
 㫅	ywf	190741	ywfj
 𮘅	ywfh	190740	ywfh
-𰨇	ywfi	190739	ywfi
 𧫕	ywfi	190738	ywfi
 㫅	ywfj	190737	ywfj
 𣄅	ywfk	190736	ywfk
