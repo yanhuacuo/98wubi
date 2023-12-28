@@ -2,13 +2,13 @@ __build_info:
   rime_version: 1.9.0
   timestamps:
     default: 1700885732
-    default.custom: 1703318142
+    default.custom: 1703735759
     key_bindings: 1606040274
     key_bindings.custom: 1679033566
     punctuation: 1606040274
     punctuation.custom: 1679033566
     wb_spelling.custom: 0
-    wb_spelling.schema: 1702852296
+    wb_spelling.schema: 1703702872
 menu:
   page_size: 9
 schema:
@@ -21,6 +21,6 @@ schema:
 
   name: "伪方案"
   schema_id: wb_spelling
-  version: 12.18
+  version: 12.28
 translator:
   dictionary: wb_spelling
