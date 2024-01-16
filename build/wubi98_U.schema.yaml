@@ -2,15 +2,15 @@ __build_info:
   rime_version: 1.9.0
   timestamps:
     default: 1700885732
-    default.custom: 1703735759
+    default.custom: 1705389899
     key_bindings: 1606040274
     key_bindings.custom: 1679033566
     punctuation: 1606040274
     punctuation.custom: 1679033566
     symbols: 1692331904
     symbols.custom: 1679033566
-    wubi98_U.custom: 1703230826
-    wubi98_U.schema: 1703230812
+    wubi98_U.custom: 1704438916
+    wubi98_U.schema: 1705389940
 ci_reverse_lookup:
   dictionary: wubi98_U.extended.extended
   tags:
@@ -472,14 +472,14 @@ simplifier:
   option_name: zh_trad
 speller:
   auto_clear: max_length
-  auto_select: true
+  auto_select: false
   delimiter: "`"
   max_code_length: 4
 style:
   antialias_mode: default
   ascii_tip_follow_cursor: true
-  color_scheme: amber
-  comment_font_face: "98WB-3"
+  color_scheme: "amber-0"
+  comment_font_face: "98WB-V"
   comment_font_point: 16
   display_tray_icon: false
   font_face: "98WB-V,98WB-U"
@@ -487,7 +487,7 @@ style:
   fullscreen: false
   horizontal: true
   inline_preedit: true
-  label_font_face: "98WB-3"
+  label_font_face: "98WB-V"
   label_font_point: 16
   label_format: "%s."
   layout:
@@ -500,8 +500,8 @@ style:
     hilite_padding_x: 5
     hilite_padding_y: 5
     hilite_spacing: 10
-    margin_x: 10
-    margin_y: 10
+    margin_x: 14
+    margin_y: 14
     max_height: 2800
     max_width: 2800
     min_height: 0

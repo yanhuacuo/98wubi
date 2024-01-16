@@ -2,15 +2,15 @@ __build_info:
   rime_version: 1.9.0
   timestamps:
     default: 1700885732
-    default.custom: 1703735794
+    default.custom: 1705389998
     key_bindings: 1606040274
     key_bindings.custom: 1679033566
     punctuation: 1606040274
     punctuation.custom: 1679033566
     symbols: 1692331904
     symbols.custom: 1679033566
-    wubi98_ci.custom: 1702852178
-    wubi98_ci.schema: 1703230798
+    wubi98_ci.custom: 1705317034
+    wubi98_ci.schema: 1705389944
 ci_reverse_lookup:
   dictionary: wubi98_ci.extended
   tags:
@@ -86,10 +86,10 @@ key_binder:
     - {accept: "Control+Shift+J", toggle: new_hide_pinyin, when: always}
     - {accept: "Control+Shift+K", toggle: single_char, when: always}
     - {accept: "Control+Shift+U", toggle: GB2312, when: always}
-    - {accept: Return, send: Escape, when: composing}
-    - {accept: Return, send: Escape, when: has_menu}
     - {accept: semicolon, send: 2, when: has_menu}
     - {accept: apostrophe, send: 3, when: has_menu}
+    - {accept: Return, send: Escape, when: composing}
+    - {accept: Return, send: Escape, when: has_menu}
 lua_reverse_db:
   code: wb_spelling
   spelling: wb_spelling
@@ -499,8 +499,8 @@ style:
     hilite_padding_x: 5
     hilite_padding_y: 5
     hilite_spacing: 10
-    margin_x: 10
-    margin_y: 10
+    margin_x: 18
+    margin_y: 18
     max_height: 2800
     max_width: 2800
     min_height: 0
@@ -510,8 +510,8 @@ style:
     shadow_offset_y: 8
     shadow_radius: 8
     spacing: 10
-    type: vertical
-  mark_text: " "
+    type: horizontal
+  mark_text: ""
   mouse_hover_ms: 0
   paging_on_scroll: false
   preedit_type: composition

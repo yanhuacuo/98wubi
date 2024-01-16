@@ -2,15 +2,15 @@ __build_info:
   rime_version: 1.9.0
   timestamps:
     default: 1700885732
-    default.custom: 1703735759
+    default.custom: 1705389899
     key_bindings: 1606040274
     key_bindings.custom: 1679033566
     punctuation: 1606040274
     punctuation.custom: 1679033566
     symbols: 1692331904
     symbols.custom: 1679033566
-    wubi98_dz.custom: 1702851864
-    wubi98_dz.schema: 1687577562
+    wubi98_dz.custom: 1704439610
+    wubi98_dz.schema: 1704439058
 ci_reverse_lookup:
   dictionary: wubi98_dz.extended
   tags:
@@ -77,12 +77,8 @@ key_binder:
     - {accept: Right, send: Down, when: has_menu}
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
-    - {accept: semicolon, send: 2, when: has_menu}
-    - {accept: apostrophe, send: 3, when: has_menu}
     - {accept: space, send: Escape, when: composing}
     - {accept: space, send: space, when: has_menu}
-    - {accept: Return, send: Escape, when: composing}
-    - {accept: Return, send: Escape, when: has_menu}
     - {accept: "Control+Shift+4", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
@@ -90,6 +86,10 @@ key_binder:
     - {accept: "Control+Shift+J", toggle: new_hide_pinyin, when: always}
     - {accept: "Control+Shift+K", toggle: single_char, when: always}
     - {accept: "Control+Shift+U", toggle: GB2312, when: always}
+    - {accept: semicolon, send: 2, when: has_menu}
+    - {accept: apostrophe, send: 3, when: has_menu}
+    - {accept: Return, send: Escape, when: composing}
+    - {accept: Return, send: Escape, when: has_menu}
 lua_reverse_db:
   code: wb_spelling
   spelling: wb_spelling
@@ -477,7 +477,7 @@ speller:
 style:
   antialias_mode: default
   ascii_tip_follow_cursor: true
-  color_scheme: "amber-5"
+  color_scheme: win11dark
   comment_font_face: "98WB-0"
   comment_font_point: 14
   display_tray_icon: false
@@ -499,19 +499,19 @@ style:
     hilite_padding_x: 5
     hilite_padding_y: 5
     hilite_spacing: 10
-    margin_x: 10
-    margin_y: 10
+    margin_x: 15
+    margin_y: 15
     max_height: 2800
     max_width: 2800
     min_height: 0
     min_width: 80
     round_corner: 16
-    shadow_offset_x: "-6"
-    shadow_offset_y: 6
+    shadow_offset_x: "-10"
+    shadow_offset_y: 10
     shadow_radius: 6
     spacing: 10
     type: vertical
-  mark_text: " "
+  mark_text: ""
   mouse_hover_ms: 0
   paging_on_scroll: false
   preedit_type: composition
