@@ -221,11 +221,12 @@ key_binder:
     - {toggle: new_hide_pinyin, accept: "Control+Shift+J", when: always}
     - {toggle: single_char, accept: "Control+Shift+K", when: always}
     - {toggle: GB2312, accept: "Control+Shift+U", when: always}
-    - {accept: Return, send: Escape, when: composing}
-    - {accept: Return, send: Escape, when: has_menu}
     - {accept: semicolon, send: 2, when: has_menu}
     - {accept: apostrophe, send: 3, when: has_menu}
+    - {accept: Return, send: Escape, when: composing}
+    - {accept: Return, send: Escape, when: has_menu}
 punctuator:
   import_preset: symbols
 menu:
   page_size: 9
+  

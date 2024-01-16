@@ -77,7 +77,7 @@ engine:
     - "lua_translator@helper"
     - "lua_translator@time_date"
 speller:
-  auto_select: true
+  auto_select: false
   auto_clear: max_length
   delimiter: "`"
   max_code_length: 4

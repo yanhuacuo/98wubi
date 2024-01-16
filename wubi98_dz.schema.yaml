@@ -1,6 +1,3 @@
-# Rime schema settings
-# encoding: utf-8
-
 schema:
   schema_id: wubi98_dz
   name: "单字"
@@ -12,12 +9,10 @@ schema:
     碼表源自 yanhuacuo
     敲 z 鍵進入拼音反查
   dependencies:
-    # - py
-
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中,英 ]    
+    states: [ 中,英 ]
   - name: zh_trad
     reset: 0
     states: [ 简,繁 ]
@@ -85,7 +80,6 @@ speller:
   auto_clear: max_length
   delimiter: "`"
   max_code_length: 4
-  
 translator:
   dictionary: wubi98_dz.extended
   db_class: tabledb
@@ -99,7 +93,6 @@ translator:
   enable_user_dict: false
   disable_user_dict_for_patterns:
     - "^z.*$"
-
 fixed:
   db_class: tabledb
   dictionary: wubi98_dz.extended
@@ -113,7 +106,6 @@ fixed:
   encode_commit_history: false
   initial_quality: 1000
   max_phrase_length: 4
-  
 mkst:
   db_class: tabledb
   dictionary: wubi98_dz.extended
@@ -130,7 +122,6 @@ mkst:
   prefix: "`"
   tag: mkst
   tips: "〔精准造词〕"
-
 rvl_zhuyin:
   db_class: tabledb
   dictionary: wubi98_dz.extended
@@ -147,7 +138,6 @@ rvl_zhuyin:
   prefix: "~"
   tag: zhuyin
   tips: "〔以形查音〕"
-
 reverse_lookup:
   db_class: tabledb
   dictionary: py
@@ -167,7 +157,6 @@ reverse_lookup:
     - "xform/([jqxy])v/$1u/"
   tag: rvlk2
   tips: "〔拼音反查〕"
-    
 rvlk1:
   db_class: tabledb
   dictionary: py
@@ -190,22 +179,17 @@ rvlk1:
   prefix: z
   tag: rvlk1
   tips: "〔拼音反查〕"
-
 ci_reverse_lookup:
   dictionary: wubi98_dz.extended
   tips: "〔五笔滤镜〕"
   tags:
     - rvlk2
-
 simplifier:
   opencc_config: s2t.json
   option_name: zh_trad
-
-
 lua_reverse_db:
   spelling: wb_spelling
   code: wb_spelling
-
 recognizer:
   import_preset: default
   patterns:
@@ -218,35 +202,30 @@ recognizer:
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
     zhuyin: "~[a-y]*?$"
     helper: '^help$'
-  
 history:
   input: z
   size: 1
   initial_quality: 1
-  
-
 key_binder:
-  bindings: 
-    - { when: has_menu, accept: Left, send: Up }
-    - { when: has_menu, accept: Right, send: Down }
-    - {accept: minus, send: Page_Up, when: has_menu}
-    - {accept: equal, send: Page_Down, when: has_menu}
+  bindings:
+    - {send: Up, accept: Left, when: has_menu}
+    - {send: Down, accept: Right, when: has_menu}
+    - {send: Page_Up, accept: minus, when: has_menu}
+    - {send: Page_Down, accept: equal, when: has_menu}
+    - {send: Escape, accept: space, when: composing}
+    - {send: space, accept: space, when: has_menu}
+    - {toggle: zh_trad, accept: "Control+Shift+4", when: always}
+    - {toggle: zh_trad, accept: "Control+Shift+dollar", when: always}
+    - {toggle: zh_trad, accept: "Control+Shift+F", when: always}
+    - {toggle: new_spelling, accept: "Control+Shift+H", when: always}
+    - {toggle: new_hide_pinyin, accept: "Control+Shift+J", when: always}
+    - {toggle: single_char, accept: "Control+Shift+K", when: always}
+    - {toggle: GB2312, accept: "Control+Shift+U", when: always}
     - {accept: semicolon, send: 2, when: has_menu}
     - {accept: apostrophe, send: 3, when: has_menu}
-    - {accept: space, send: Escape, when: composing}
-    - {accept: space, send: space, when: has_menu}
     - {accept: Return, send: Escape, when: composing}
     - {accept: Return, send: Escape, when: has_menu}
-    - {accept: "Control+Shift+4", toggle: zh_trad, when: always}
-    - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
-    - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
-    - {accept: "Control+Shift+H", toggle: new_spelling, when: always}
-    - {accept: "Control+Shift+J", toggle: new_hide_pinyin, when: always} 
-    - {accept: "Control+Shift+K", toggle: single_char, when: always}
-    - {accept: "Control+Shift+U", toggle: GB2312, when: always}
-
 punctuator:
   import_preset: symbols
-  
 menu:
-  page_size: 5  
+  page_size: 5
