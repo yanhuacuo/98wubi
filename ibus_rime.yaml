@@ -1,0 +1,14 @@
+__build_info:
+  rime_version: 1.7.3
+  timestamps:
+    ibus_rime: 1637397651
+    ibus_rime.custom: 0
+modules:
+  - lua
+plugins:
+  - "librime-lua.so"
+style:
+  fullscreen: false
+  horizontal: false
+  inline_preedit: true
+  preedit_type: composition

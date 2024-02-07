@@ -1,0 +1,18 @@
+patch:
+  "style/font_face": "98WB-2"
+  "style/horizontal": false
+  "style/fullscreen": false
+  "style/inline_preedit": false
+  "style/preedit_type": composition
+  "style/display_tray_icon": false
+  "style/label_format": "%s."
+  "style/layout/min_width": 160
+  "style/layout/min_height": 0
+  "style/layout/border_width": 3
+  "style/layout/margin_x": 12
+  "style/layout/margin_y": 12
+  "style/layout/spacing": 10
+  "style/layout/candidate_spacing": 5
+  "style/layout/hilite_spacing": 4
+  "style/layout/hilite_padding": 2
+  "style/layout/round_corner": 4

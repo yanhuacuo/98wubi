@@ -1,0 +1,6 @@
+patch:
+  show_notifications: true
+  show_notifications_time: 1400
+  global_ascii: false
+  "style/candidate_abbreviate_length": 0
+  #"style/color_scheme_dark": lost_temple
