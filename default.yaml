@@ -8,7 +8,7 @@ schema_list:
   - schema: wubi98_dz
   - schema: wubi98_U
   - schema: wb_spelling
-
+  - schema: py
 
 switcher:
   caption: 〔方案選單〕
