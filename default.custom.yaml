@@ -10,3 +10,4 @@ patch:
     - {schema: wb_spelling}
     - {schema: wubi98_dz}
     - {schema: wubi98_U}
+    - {schema: py}
