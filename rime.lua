@@ -288,7 +288,7 @@ function date_translator(input, seg)
 			}
 		-- Candidate(type, start, end, text, comment)
 		for i =1,#dates do
-			 yield(Candidate(keyword, seg.start, seg._end, dates[i], "〔日期〕"))
+			 yield(Candidate(keyword, seg.start, seg._end, dates[i], border_began .. "日期" .. border_end))
 		end
 		dates = nil
 	end
@@ -303,7 +303,7 @@ function time_translator(input, seg)
 			,os.date("%Y-%m-%d " .. format_Time() .. "%I:%M")
 			}
 		for i =1,#times do
-			yield(Candidate(keyword, seg.start, seg._end, times[i], "〔时间〕"))
+			yield(Candidate(keyword, seg.start, seg._end, times[i], border_began .. "时间" .. border_end))
 		end
 		times = nil
 	end
@@ -314,12 +314,12 @@ function lunar_translator(input, seg)
 	local keyword = rv_var["nl_var"]
 	if (input == keyword) then
 		local lunar = {
-				{Date2LunarDate(os.date("%Y%m%d")) .. JQtest(os.date("%Y%m%d")),"〔公历⇉农历〕"}
-				,{Date2LunarDate(os.date("%Y%m%d")) .. GetLunarSichen(os.date("%H"),1),"〔公历⇉农历〕"}
-				,{lunarJzl(os.date("%Y%m%d%H")),"〔公历⇉干支〕"}
-				,{LunarDate2Date(os.date("%Y%m%d"),0),"〔农历⇉公历〕"}
+				{Date2LunarDate(os.date("%Y%m%d")) .. JQtest(os.date("%Y%m%d")),border_began .. "公历⇉农历" .. border_end}
+				,{Date2LunarDate(os.date("%Y%m%d")) .. GetLunarSichen(os.date("%H"),1),border_began .. "公历⇉农历" .. border_end}
+				,{lunarJzl(os.date("%Y%m%d%H")),border_began .. "公历⇉干支" .. border_end}
+				,{LunarDate2Date(os.date("%Y%m%d"),0),border_began .. "农历⇉公历" .. border_end}
 			}
-		local leapDate={LunarDate2Date(os.date("%Y%m%d"),1).."（闰）","〔农历⇉公历〕"}
+		local leapDate={LunarDate2Date(os.date("%Y%m%d"),1).."（闰）",border_began .. "农历⇉公历" .. border_end}
 		if string.match(leapDate[1],"^(%d+)")~=nil then table.insert(lunar,leapDate) end
 		for i =1,#lunar do
 			yield(Candidate(keyword, seg.start, seg._end, lunar[i][1], lunar[i][2]))
@@ -339,13 +339,13 @@ local function QueryLunarInfo(date)
 		LunarDate=Date2LunarDate(str)  LunarGz=lunarJzl(str)  DateTime=LunarDate2Date(str,0)
 		if LunarGz~=nil then
 			result={
-				{CnDate_translator(string.sub(str,1,8)),"〔中文日期〕"}
-				,{LunarDate,"〔公历⇉农历〕"}
-				,{LunarGz,"〔公历⇉干支〕"}
+				{CnDate_translator(string.sub(str,1,8)),border_began .. "中文日期" .. border_end}
+				,{LunarDate,border_began .. "公历⇉农历" .. border_end}
+				,{LunarGz,border_began .. "公历⇉干支" .. border_end}
 			}
 			if tonumber(string.sub(str,7,8))<31 then
-				table.insert(result,{DateTime,"〔农历⇉公历〕"})
-				local leapDate={LunarDate2Date(str,1).."（闰）","〔农历⇉公历〕"}
+				table.insert(result,{DateTime,border_began .. "农历⇉公历" .. border_end})
+				local leapDate={LunarDate2Date(str,1).."（闰）",border_began .. "农历⇉公历" .. border_end}
 				if string.match(leapDate[1],"^(%d+)")~=nil then table.insert(result,leapDate) end
 			end
 		end
@@ -391,7 +391,7 @@ function week_translator(input, seg)
 			, os.date("%Y年%m月%d日").." "..format_week(0).." "..os.date("%H:%M:%S")
 			}
 		for i =1,#weeks do
-			yield(Candidate(keyword, seg.start, seg._end, weeks[i], "〔星期〕"))
+			yield(Candidate(keyword, seg.start, seg._end, weeks[i], border_began .. "星期" .. border_end))
 		end
 		weeks = nil
 	end
@@ -403,7 +403,7 @@ function Jq_translator(input, seg)
 	if (input == keyword) then
 		local jqs = GetNowTimeJq(os.date("%Y%m%d"))
 		for i =1,#jqs do
-			yield(Candidate(keyword, seg.start, seg._end, jqs[i], "〔节气〕"))
+			yield(Candidate(keyword, seg.start, seg._end, jqs[i], border_began .. "节气" .. border_end))
 		end
 		jqs = nil
 	end
@@ -428,7 +428,7 @@ function longstring_translator(input, seg)	--编码为小写字母开头为过�
 				strings=hotstring_obj[str:lower(str)]
 				if type(strings)== "table" then
 					for i =1,#strings do
-						if strings[i][2]~="" then m="〔".. strings[i][2].."〕" else m="" end
+						if strings[i][2]~="" then m=border_began .. "".. strings[i][2].."" .. border_end else m="" end
 						yield(Candidate(input, seg.start, seg._end, strings[i][1],m))
 					end
 				end
@@ -458,7 +458,7 @@ local function set_switch_keywords(input, seg,env)
 	local trad_mode=env.engine.context:get_option(trad_keyword)
 
 	if input == rv_var.switch_keyword and #candidate_keywords>0 or input == rv_var.switch_schema and #enable_schema_list>0 and trad_mode then
-		if schema_name then segment.prompt =" 〔 当前方案："..schema_name.." 〕" end
+		if schema_name then segment.prompt =" 〔 当前方案："..schema_name.." " .. border_end end
 		local cand =nil
 		local seg_text=""
 		for i =1,#candidate_keywords do
