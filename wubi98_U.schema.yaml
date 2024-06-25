@@ -43,7 +43,7 @@ engine:
     - "reverse_lookup_filter@ci_reverse_lookup"
     - lua_filter@new_spelling@spelling
     - lua_filter@single_char
-    #- lua_filter@*multiline*Multiline_filter
+    - lua_filter@*multiline*Multiline_filter
     - uniquifier
   processors:
     - ascii_composer
@@ -226,6 +226,17 @@ key_binder:
     - {accept: apostrophe, send: 3, when: has_menu}
     - {accept: Return, send: Escape, when: composing}
     - {accept: Return, send: Escape, when: has_menu}
+    - {accept: KP_0, send: 0, when: composing}
+    - {accept: KP_1, send: 1, when: composing}
+    - {accept: KP_2, send: 2, when: composing}
+    - {accept: KP_3, send: 3, when: composing}
+    - {accept: KP_4, send: 4, when: composing}
+    - {accept: KP_5, send: 5, when: composing}
+    - {accept: KP_6, send: 6, when: composing}
+    - {accept: KP_7, send: 7, when: composing}
+    - {accept: KP_8, send: 8, when: composing}
+    - {accept: KP_9, send: 9, when: composing}
+    - {accept: KP_Decimal, send: period, when: composing}
 punctuator:
   import_preset: symbols
 menu:

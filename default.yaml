@@ -1,14 +1,14 @@
 # Rime default settings
 # encoding: utf-8
 
-config_version: '0.41'
+config_version: '0.42'
 
 schema_list:
   - schema: wubi98_ci
-  - schema: wubi98_dz
   - schema: wubi98_U
   - schema: wb_spelling
   - schema: py
+  - schema: wubi98_dz
 
 switcher:
   caption: 〔方案選單〕
