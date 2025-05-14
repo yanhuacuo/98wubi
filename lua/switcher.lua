@@ -74,53 +74,61 @@ local function get_switch_keywords(obj,chars)
 end
 
 local function selector(key, env)
-	if env.switcher == nil then return kNoop end
-	if key:release() or key:alt() then return kNoop end
-	local context = env.engine.context
-	if (context:is_composing()) then
-		local idx = select_index(key,env)
-		if idx < 0 then return kNoop end
-		local composition = context.composition
-		local segment = composition:back()
-		local codetext=env.engine.context.input
-		local schema_name=env.engine.schema.schema_name or ""
-		local candidate_count = segment.menu:candidate_count()
-		local selected_candidate=segment:get_selected_candidate() or ""
-		local page_pos= math.modf( segment.selected_index/page_size )+1
-		local trad_mode=env.engine.context:get_option(trad_keyword)
-		-- if segment.selected_index>page_size then
-		-- 	local candidate_pos= math.fmod( segment.selected_index, page_size )
-		-- end
-		if page_pos>1 then idx=(page_pos-1)*page_size+idx end
-		if candidate_count then
-			local last_candidate=selected_candidate.text
-			if key.keycode>0x2f and key.keycode<0x6a and idx>-1 then
-				last_candidate=segment:get_candidate_at(idx).text or ""
-			end
-			if context.input == rv_var.switch_schema and last_candidate and not trad_mode then	-- 控制关键字切换方案
-				local sc_id= IsExistChar(enable_schema_list,last_candidate)
-				-- env.engine:commit_text(last_candidate.."-"..sc_id)
-				-- context:clear()
-				if sc_id:find("%a") then
-					env.engine:apply_schema(Schema(sc_id))
-					return kAccepted
-				end
-			elseif context.input == rv_var.switch_keyword and last_candidate or trad_mode and context.input == rv_var.switch_schema and last_candidate then	-- 关键字切换方案选项开关，如简繁切换、拆分开关等等
-				local keyword=get_switch_keywords(candidate_keywords,last_candidate)
-				-- env.engine:commit_text(last_candidate .. "-" .. keyword)
-				if keyword~="" then
-					local flag=env.engine.context:get_option(keyword)
-					if flag~=nil then
-						if env.engine.context:get_option(keyword) then apply_switch(env, keyword, false) else apply_switch(env, keyword, true) end
-						context:clear()
-						return kAccepted
-					end
-				end
-			end
-		end
-	end
+    if env.switcher == nil then return kNoop end
+    if key:release() or key:alt() then return kNoop end
+    local context = env.engine.context
+    if (context:is_composing()) then
+        local idx = select_index(key,env)
+        if idx < 0 then return kNoop end
+        local composition = context.composition
+        local segment = composition:back()
+        -- 新增：检查segment是否存在（避免segment为nil）
+        if not segment then return kNoop end
 
-	return kNoop
+        local codetext = env.engine.context.input
+        local schema_name = env.engine.schema.schema_name or ""
+        local candidate_count = segment.menu:candidate_count()
+        -- 修正1：将 `or ""` 改为 `or {}`（确保selected_candidate为表）
+        local selected_candidate = segment:get_selected_candidate() or {}
+        local page_pos = math.modf(segment.selected_index / page_size) + 1
+
+        -- 修正2：安全访问text字段（避免nil）
+        local last_candidate = selected_candidate.text or ""
+
+        if page_pos > 1 then 
+            idx = (page_pos - 1) * page_size + idx 
+        end
+
+        if candidate_count then
+            -- 原逻辑：若通过数字键选择候选，更新last_candidate
+            if key.keycode > 0x2f and key.keycode < 0x6a and idx > -1 then
+                -- 新增：检查候选是否存在（避免越界）
+                local candidate = segment:get_candidate_at(idx)
+                last_candidate = candidate and candidate.text or ""
+            end
+
+            -- 关键字切换逻辑（保持原逻辑，修正字段访问）
+            if context.input == rv_var.switch_schema and last_candidate and not trad_mode then
+                local sc_id = IsExistChar(enable_schema_list, last_candidate)
+                if sc_id and sc_id:find("%a") then
+                    env.engine:apply_schema(Schema(sc_id))
+                    return kAccepted
+                end
+            elseif (context.input == rv_var.switch_keyword and last_candidate) or 
+                   (trad_mode and context.input == rv_var.switch_schema and last_candidate) then
+                local keyword = get_switch_keywords(candidate_keywords, last_candidate)
+                if keyword ~= "" then
+                    local flag = env.engine.context:get_option(keyword)
+                    if flag ~= nil then
+                        apply_switch(env, keyword, not flag)
+                        context:clear()
+                        return kAccepted
+                    end
+                end
+            end
+        end
+    end
+    return kNoop
 end
 
 -- 初始化
